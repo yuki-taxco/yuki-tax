@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援</title>
+<meta name="description" content="大阪の中小企業向けに、税務顧問・財務支援・会計環境の構築を行う結城宏太税理士事務所。バックオフィスの仕組みを整え、税務・財務の観点から経営判断を支援します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a18; --ink-mid: #4a4a46; --ink-light: #888882;
+    --paper: #f5f3ef; --paper-warm: #edeae4; --rule: #d8d4cc; --accent: #8a7355;
+    --ff-serif: 'Noto Serif JP','Yu Mincho','游明朝',serif;
+    --ff-sans: 'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { background:var(--paper); color:var(--ink); font-family:var(--ff-sans); font-weight:300; line-height:1.9; -webkit-font-smoothing:antialiased; }
+
+  header { position:fixed; top:0; left:0; right:0; z-index:100; background:var(--paper); border-bottom:1px solid var(--rule); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:64px; opacity:0; animation:fadeIn 0.8s ease 0.1s forwards; }
+  .logo { font-family:var(--ff-serif); font-weight:300; font-size:14px; letter-spacing:0.18em; color:var(--ink); text-decoration:none; }
+  nav { display:flex; gap:36px; }
+  nav a { font-size:13px; letter-spacing:0.1em; color:var(--ink-mid); text-decoration:none; transition:color 0.2s; }
+  nav a:hover { color:var(--ink); }
+  .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; }
+  .hamburger span { display:block; width:22px; height:1px; background:var(--ink); transition:transform 0.3s,opacity 0.3s; }
+  .hamburger.open span:nth-child(1) { transform:translateY(6px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity:0; }
+  .hamburger.open span:nth-child(3) { transform:translateY(-6px) rotate(-45deg); }
+  .mobile-nav { display:none; position:fixed; top:64px; left:0; right:0; background:var(--paper); border-bottom:1px solid var(--rule); padding:24px 24px 32px; z-index:99; flex-direction:column; }
+  .mobile-nav.open { display:flex; }
+  .mobile-nav a { padding:16px 0; font-size:15px; letter-spacing:0.1em; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--rule); }
+
+  .hero { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:0 48px 80px; position:relative; }
+  .hero-rule { position:absolute; top:64px; left:48px; right:48px; height:1px; background:var(--rule); transform-origin:left; transform:scaleX(0); animation:expandRule 1s ease 0.6s forwards; }
+  .hero-sub { position:absolute; top:92px; right:48px; font-size:12px; letter-spacing:0.18em; color:var(--ink-light); opacity:0; animation:fadeIn 0.8s ease 1s forwards; }
+  .hero-body { max-width:640px; opacity:0; transform:translateY(24px); animation:slideUp 1s ease 0.4s forwards; }
+  .hero-label { font-size:14px; letter-spacing:0.12em; color:var(--ink-mid); margin-bottom:20px; }
+  .hero-name { font-family:var(--ff-serif); font-size:clamp(48px,7vw,80px); font-weight:300; letter-spacing:0.14em; line-height:1.05; margin-bottom:6px; }
+  .hero-name-en { font-size:13px; letter-spacing:0.3em; color:var(--ink-light); margin-bottom:44px; }
+  .hero-desc { font-size:15px; color:var(--ink-mid); letter-spacing:0.06em; line-height:2.4; border-left:1px solid var(--accent); padding-left:20px; max-width:440px; }
+
+  section { padding:120px 48px; border-top:1px solid var(--rule); }
+  .section-header { display:flex; align-items:baseline; gap:24px; margin-bottom:64px; }
+  .section-num { font-size:12px; letter-spacing:0.2em; color:var(--ink-light); flex-shrink:0; }
+  .section-title { font-family:var(--ff-serif); font-size:24px; font-weight:300; letter-spacing:0.18em; }
+
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+  .about-text { font-size:15px; color:var(--ink-mid); line-height:2.4; letter-spacing:0.05em; }
+  .about-text p+p { margin-top:1.8em; }
+  .about-profile { border-left:1px solid var(--rule); padding-left:48px; }
+  .profile-row { display:flex; padding:16px 0; border-bottom:1px solid var(--rule); }
+  .profile-label { width:80px; flex-shrink:0; color:var(--ink-light); letter-spacing:0.1em; font-size:11px; padding-top:3px; }
+  .profile-value { font-size:14px; color:var(--ink-mid); letter-spacing:0.05em; line-height:1.9; }
+
+  .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); }
+  .service-item { background:var(--paper); padding:44px 36px; transition:background 0.3s; }
+  .service-item:hover { background:var(--paper-warm); }
+  .service-num { font-size:11px; letter-spacing:0.2em; color:var(--ink-light); margin-bottom:20px; display:block; }
+  .service-name { font-family:var(--ff-serif); font-size:18px; font-weight:300; letter-spacing:0.1em; margin-bottom:16px; line-height:1.7; }
+  .service-desc { font-size:13px; color:var(--ink-light); line-height:2.1; letter-spacing:0.04em; }
+  .service-item.featured { background:var(--ink); color:var(--paper); }
+  .service-item.featured:hover { background:#2a2a28; }
+  .service-item.featured .service-num, .service-item.featured .service-desc { color:#777772; }
+  .service-item.featured .service-name { color:var(--paper); }
+
+  .contact-inner { max-width:580px; }
+  .contact-note { font-size:15px; color:var(--ink-mid); letter-spacing:0.05em; line-height:2.4; margin-bottom:16px; }
+  .contact-note-sub { font-size:13px; color:var(--ink-light); letter-spacing:0.04em; line-height:2; margin-bottom:48px; border-left:1px solid var(--rule); padding-left:16px; }
+  .form-row { margin-bottom:36px; }
+  .form-label { display:block; font-size:11px; letter-spacing:0.2em; color:var(--ink-light); margin-bottom:10px; }
+  .form-input, .form-textarea { width:100%; background:transparent; border:none; border-bottom:1px solid var(--rule); padding:12px 0; font-family:var(--ff-sans); font-size:15px; font-weight:300; color:var(--ink); letter-spacing:0.05em; outline:none; transition:border-color 0.2s; -webkit-appearance:none; border-radius:0; }
+  .form-input:focus, .form-textarea:focus { border-bottom-color:var(--accent); }
+  .form-textarea { resize:none; height:130px; line-height:2; }
+  .consent-row { display:flex; align-items:flex-start; gap:12px; margin-bottom:32px; }
+  .consent-row input[type="checkbox"] { margin-top:4px; flex-shrink:0; accent-color:var(--accent); width:16px; height:16px; cursor:pointer; }
+  .consent-label { font-size:13px; color:var(--ink-mid); line-height:1.9; letter-spacing:0.04em; }
+  .consent-label a { color:var(--accent); text-decoration:none; }
+  .consent-label a:hover { text-decoration:underline; }
+  .form-submit { display:inline-flex; align-items:center; gap:16px; background:none; border:1px solid var(--ink); padding:16px 40px; font-family:var(--ff-sans); font-size:13px; font-weight:300; letter-spacing:0.25em; color:var(--ink); cursor:pointer; transition:background 0.3s,color 0.3s; margin-top:8px; }
+  .form-submit:hover { background:var(--ink); color:var(--paper); }
+  .form-submit:disabled { opacity:0.4; cursor:not-allowed; }
+  .form-submit-arrow { transition:transform 0.2s; }
+  .form-submit:hover .form-submit-arrow { transform:translateX(4px); }
+
+  footer { border-top:1px solid var(--rule); padding:40px 48px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
+  .footer-address { font-size:13px; color:var(--ink-light); letter-spacing:0.06em; line-height:2.2; font-style:normal; }
+  .footer-address a { color:var(--ink-light); text-decoration:none; }
+  .footer-address a:hover { text-decoration:underline; }
+  .footer-right { display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
+  .footer-right a { font-size:12px; color:var(--ink-light); text-decoration:none; letter-spacing:0.1em; transition:color 0.2s; }
+  .footer-right a:hover { color:var(--ink); }
+  .footer-copy { font-size:12px; color:var(--ink-light); letter-spacing:0.1em; }
+
+  .privacy-section { padding:80px 48px; border-top:1px solid var(--rule); background:var(--paper-warm); }
+  .privacy-inner { max-width:680px; }
+  .privacy-title { font-family:var(--ff-serif); font-size:18px; font-weight:300; letter-spacing:0.18em; margin-bottom:48px; color:var(--ink); }
+  .privacy-body { font-size:14px; color:var(--ink-mid); line-height:2.4; letter-spacing:0.04em; }
+  .privacy-body p { margin-bottom:1.8em; }
+  .privacy-heading { font-size:11px; letter-spacing:0.2em; color:var(--ink-light); margin-bottom:8px; }
+  .privacy-body a { color:var(--accent); text-decoration:none; }
+  .privacy-body a:hover { text-decoration:underline; }
+  .privacy-date { font-size:12px; color:var(--ink-light); border-top:1px solid var(--rule); padding-top:24px; margin-top:8px; }
+
+  @keyframes fadeIn { to { opacity:1; } }
+  @keyframes slideUp { to { opacity:1; transform:translateY(0); } }
+  @keyframes expandRule { to { transform:scaleX(1); } }
+  .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.8s ease,transform 0.8s ease; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+
+  @media (max-width:768px) {
+    header { padding:0 20px; }
+    nav { display:none; }
+    .hamburger { display:flex; }
+    .hero { padding:80px 20px 60px; min-height:100svh; }
+    .hero-rule { left:20px; right:20px; }
+    .hero-sub { right:20px; font-size:11px; }
+    .hero-desc { font-size:14px; }
+    section { padding:72px 20px; }
+    .about-grid { grid-template-columns:1fr; gap:48px; }
+    .about-text { font-size:14px; }
+    .about-profile { border-left:none; padding-left:0; border-top:1px solid var(--rule); padding-top:40px; }
+    .services-grid { grid-template-columns:1fr; }
+    .service-item { padding:36px 24px; }
+    .form-input, .form-textarea { font-size:16px; }
+    footer { flex-direction:column; padding:32px 20px; gap:16px; }
+    .footer-right { align-items:flex-start; }
+    .privacy-section { padding:60px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#top" class="logo">結城宏太税理士事務所</a>
+  <nav>
+    <a href="#about">事務所について</a>
+    <a href="#services">業務内容</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニュー">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMenu()">事務所について</a>
+  <a href="#services" onclick="closeMenu()">業務内容</a>
+  <a href="#contact" onclick="closeMenu()">お問い合わせ</a>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-rule"></div>
+  <span class="hero-sub">Osaka, Japan</span>
+  <div class="hero-body">
+    <p class="hero-label">税理士</p>
+    <h1 class="hero-name">結城　宏太</h1>
+    <p class="hero-name-en">Certified Public Tax Accountant</p>
+    <p class="hero-desc">
+      データが整えば、判断が変わる。<br>
+      バックオフィスの仕組みを整え、<br>
+      税務・財務の観点から経営を支援します。
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">事務所について</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>経営判断の質は、その判断を支えるデータの質に比例します。売上・費用・資金繰り——これらの原始データが正確に、素早く会計情報へと変換される体制が整えば、経営者は「数字を集める」時間を「数字を読む」時間に充てることができます。</p>
+      <p>当事務所は、顧問先が自社のデータを自分で持てる仕組みの構築を重視します。記帳を代行するのではなく、自動化・標準化された会計フローを顧問先とともに設計し、そのデータをもとに税務・財務の観点から意思決定を支援します。</p>
+      <p>税務申告・相続・事業承継といった専門領域はもちろん、バックオフィスの業務設計から経営数値の活用まで、大阪・グラングリーン大阪を拠点に対応します。</p>
+    </div>
+    <div class="about-profile reveal">
+      <div class="profile-row">
+        <span class="profile-label">氏名</span>
+        <span class="profile-value">結城　宏太（ゆうき こうた）</span>
+      </div>
+      <div class="profile-row">
+        <span class="profile-label">資格</span>
+        <span class="profile-value">税理士（登録 2018年）<br>登録番号 139208</span>
+      </div>
+      <div class="profile-row">
+        <span class="profile-label">所属</span>
+        <span class="profile-value">近畿税理士会大淀支部</span>
+      </div>
+      <div class="profile-row">
+        <span class="profile-label">開業</span>
+        <span class="profile-value">2026年4月</span>
+      </div>
+      <div class="profile-row">
+        <span class="profile-label">所在地</span>
+        <span class="profile-value">大阪府大阪市北区大深町5-54<br>グラングリーン大阪 南館 ゲートタワー7階</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">業務内容</h2>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-item">
+      <span class="service-num">01</span>
+      <h3 class="service-name">税務申告・<br>税務顧問</h3>
+      <p class="service-desc">法人税・所得税・消費税の申告。月次試算表から決算まで、経営判断を支える数字を整えます。</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">02</span>
+      <h3 class="service-name">相続・<br>事業承継</h3>
+      <p class="service-desc">相続税申告・節税対策・納税資金の確保。後継者への円滑な事業承継スキームを構築します。</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">03</span>
+      <h3 class="service-name">会計環境の<br>構築・支援</h3>
+      <p class="service-desc">自動記帳が機能する体制の設計・導入支援。顧問先を主体に、データが自然と集まるフローを整えます。</p>
+    </div>
+    <div class="service-item featured">
+      <span class="service-num">04</span>
+      <h3 class="service-name">業務フロー<br>整備支援</h3>
+      <p class="service-desc">バックオフィス業務を可視化し、属人化の解消と業務効率化を支援します。</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">05</span>
+      <h3 class="service-name">資金計画・<br>経営計画</h3>
+      <p class="service-desc">キャッシュフロー予測・損益シミュレーションで、将来の経営判断を数値で裏付けます。</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">06</span>
+      <h3 class="service-name">その他<br>税務相談</h3>
+      <p class="service-desc">税務調査対応・不服申立て・各種届出書類の作成。専門家として的確にサポートします。</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">お問い合わせ</h2>
+  </div>
+  <div class="contact-inner reveal">
+    <p class="contact-note">
+      初回30分程度のご相談は無料で承ります（一般的なご相談に限ります）。<br>
+      内容によっては、事前に決算書・試算表等の資料をご準備いただく場合があります。
+    </p>
+    <p class="contact-note-sub">
+      通常3営業日以内を目安にご返信いたします。内容により前後する場合があります。
+    </p>
+
+    <div data-fs-success style="display:none; font-size:15px; color:var(--accent); letter-spacing:0.08em; line-height:2.4; padding:24px 0 24px 20px; border-left:1px solid var(--accent);">
+      お問い合わせありがとうございます。<br>
+      通常3営業日以内を目安にご返信いたします。
+    </div>
+    <div data-fs-error style="display:none; font-size:13px; color:#b04040; letter-spacing:0.06em; margin-bottom:24px;"></div>
+
+    <form id="contactForm">
+      <div class="form-row">
+        <label class="form-label" for="name">お名前</label>
+        <input class="form-input" type="text" id="name" name="name" required autocomplete="name" data-fs-field>
+        <span data-fs-error="name" style="font-size:12px; color:#b04040;"></span>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="company">会社名・屋号</label>
+        <input class="form-input" type="text" id="company" name="company" autocomplete="organization">
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="email">メールアドレス</label>
+        <input class="form-input" type="email" id="email" name="email" required autocomplete="email" data-fs-field>
+        <span data-fs-error="email" style="font-size:12px; color:#b04040;"></span>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="message">お問い合わせ内容</label>
+        <textarea class="form-textarea" id="message" name="message" required data-fs-field></textarea>
+        <span data-fs-error="message" style="font-size:12px; color:#b04040;"></span>
+      </div>
+      <div class="consent-row">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label class="consent-label" for="consent">
+          <a href="#privacy">個人情報保護方針</a>に同意のうえ送信します。
+        </label>
+      </div>
+      <button class="form-submit" type="submit" data-fs-submit-btn>
+        送信する <span class="form-submit-arrow">&#8594;</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <address class="footer-address">
+    〒530-0011　大阪府大阪市北区大深町5-54<br>
+    グラングリーン大阪 南館 ゲートタワー7階<br>
+    TEL <a href="tel:0677886391" style="color:var(--ink-light); text-decoration:none;">06-7688-6391</a>　<a href="mailto:kota@yuki-tax.jp">kota@yuki-tax.jp</a>
+  </address>
+  <div class="footer-right">
+    <a href="#privacy">個人情報保護方針</a>
+    <span class="footer-copy">&#169; 2026 結城宏太税理士事務所</span>
+  </div>
+</footer>
+
+<section id="privacy" class="privacy-section">
+  <div class="privacy-inner">
+    <h2 class="privacy-title">個人情報保護方針</h2>
+    <div class="privacy-body">
+      <p>結城宏太税理士事務所（以下「当事務所」）は、お問い合わせフォームを通じて取得する個人情報について、以下の方針に従い適切に取り扱います。</p>
+
+      <p class="privacy-heading">1. 取得する情報</p>
+      <p>氏名、会社名・屋号、メールアドレス、お問い合わせ内容。</p>
+
+      <p class="privacy-heading">2. 利用目的</p>
+      <p>お問い合わせへの回答および当事務所業務に関するご連絡のみに使用します。取得した個人情報を目的外に利用することはありません。</p>
+
+      <p class="privacy-heading">3. 外部サービスの利用（フォーム送信基盤）</p>
+      <p>当事務所はお問い合わせフォームの送信処理に Formspree, Inc.（米国）のサービスを利用しています。入力された情報は同社のシステムを経由して当事務所に送信されます。同社における個人情報の取扱いについては、同社のプライバシーポリシー（<a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">formspree.io</a>）をご確認ください。</p>
+
+      <p class="privacy-heading">4. 保存期間</p>
+      <p>取得した個人情報は、お問い合わせへの対応完了後、必要な期間を超えて保存しません。顧問契約に至った場合は、税理士法その他関係法令に基づく期間、適切に管理します。</p>
+
+      <p class="privacy-heading">5. 安全管理</p>
+      <p>取得した個人情報は、不正アクセス・紛失・漏洩等を防止するために適切な安全管理措置を講じます。</p>
+
+      <p class="privacy-heading">6. 第三者への提供</p>
+      <p>法令に基づく場合を除き、ご本人の同意なく第三者に提供することはありません。</p>
+
+      <p class="privacy-heading">7. 開示・訂正・削除</p>
+      <p>ご本人からの開示・訂正・削除のご要望には、本人確認のうえ合理的な期間内に対応します。下記メールアドレスまでご連絡ください。</p>
+
+      <p class="privacy-heading">8. お問い合わせ窓口</p>
+      <p>結城宏太税理士事務所　<a href="mailto:kota@yuki-tax.jp">kota@yuki-tax.jp</a></p>
+
+      <p class="privacy-date">制定：2026年4月</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const ham = document.getElementById('hamburger');
+  const mNav = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mNav.classList.toggle('open');
+  });
+  function closeMenu() {
+    ham.classList.remove('open');
+    mNav.classList.remove('open');
+  }
+
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 100);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => io.observe(el));
+
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contactForm', formId: 'maqlllje' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
