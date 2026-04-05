@@ -4,160 +4,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援</title>
-<meta name="description" content="大阪の中小企業向けに、税務顧問・財務支援・会計環境の構築を行う結城宏太税理士事務所。バックオフィスの仕組みを整え、税務・財務の観点から経営判断を支援します。">
+<meta name="description" content="大阪・グラングリーン大阪を拠点とする税理士事務所。税務顧問・相続・業務フロー整備まで、データを活かした経営支援を行います。">
+<!-- OGP -->
 <meta property="og:title" content="結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援">
-<meta property="og:description" content="データが整えば、判断が変わる。バックオフィスの仕組みを整え、税務・財務の観点から経営を支援します。">
-<meta property="og:type" content="website">
+<meta property="og:description" content="大阪・グラングリーン大阪を拠点とする税理士事務所。税務顧問・相続・業務フロー整備まで、データを活かした経営支援を行います。">
+<meta property="og:image" content="https://yuki-tax.jp/images/tower.jpg">
 <meta property="og:url" content="https://yuki-tax.jp">
-<meta property="og:image" content="https://yuki-tax.jp/images/lobby.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="結城宏太税理士事務所">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --ink: #1a1a18; --ink-mid: #4a4a46; --ink-light: #888882;
-    --paper: #f5f3ef; --paper-warm: #edeae4; --rule: #d8d4cc; --accent: #8a7355;
-    --ff-serif: 'Noto Serif JP','Yu Mincho','游明朝',serif;
-    --ff-sans: 'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;
-  }
-  html { scroll-behavior: smooth; }
-  body { background:var(--paper); color:var(--ink); font-family:var(--ff-sans); font-weight:300; line-height:1.9; -webkit-font-smoothing:antialiased; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink: #111111; --ink-mid: #333333; --ink-light: #555555;
+  --ink-xlight: #888888; --paper: #ffffff; --paper-warm: #f6f3ec;
+  --paper-dark: #1a1a18; --rule: #cccccc; --rule-light: #e8e8e8;
+  --accent: #7a6040; --accent-light: #c8a96e;
+  --ff-serif: 'Noto Serif JP','Yu Mincho','游明朝',serif;
+  --ff-sans: 'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background:var(--paper); color:var(--ink); font-family:var(--ff-sans); font-weight:300; line-height:1.8; -webkit-font-smoothing:antialiased; font-size:16px; }
 
-  header { position:fixed; top:0; left:0; right:0; z-index:100; background:var(--paper); border-bottom:1px solid var(--rule); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:64px; opacity:0; animation:fadeIn 0.8s ease 0.1s forwards; }
-  .logo { font-family:var(--ff-serif); font-weight:300; font-size:14px; letter-spacing:0.18em; color:var(--ink); text-decoration:none; }
-  nav { display:flex; gap:36px; }
-  nav a { font-size:13px; letter-spacing:0.1em; color:var(--ink-mid); text-decoration:none; transition:color 0.2s; }
-  nav a:hover { color:var(--ink); }
-  .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; }
-  .hamburger span { display:block; width:22px; height:1px; background:var(--ink); transition:transform 0.3s,opacity 0.3s; }
-  .hamburger.open span:nth-child(1) { transform:translateY(6px) rotate(45deg); }
-  .hamburger.open span:nth-child(2) { opacity:0; }
-  .hamburger.open span:nth-child(3) { transform:translateY(-6px) rotate(-45deg); }
-  .mobile-nav { display:none; position:fixed; top:64px; left:0; right:0; background:var(--paper); border-bottom:1px solid var(--rule); padding:24px 24px 32px; z-index:99; flex-direction:column; }
-  .mobile-nav.open { display:flex; }
-  .mobile-nav a { padding:16px 0; font-size:15px; letter-spacing:0.1em; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--rule); }
+/* HEADER */
+header { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,0.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--rule); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:68px; }
+.logo-wrap { text-decoration:none; display:flex; flex-direction:column; gap:2px; }
+.logo-main { font-family:var(--ff-serif); font-weight:400; font-size:15px; letter-spacing:0.15em; color:var(--ink); }
+.logo-sub { font-size:10px; letter-spacing:0.18em; color:var(--ink-xlight); }
+nav { display:flex; gap:32px; align-items:center; }
+nav a { font-size:13px; letter-spacing:0.08em; color:var(--ink-mid); text-decoration:none; transition:color 0.2s; font-weight:400; }
+nav a:hover { color:var(--accent); }
+.nav-cta { background:var(--ink); color:#fff !important; padding:10px 22px; letter-spacing:0.15em !important; transition:background 0.2s !important; }
+.nav-cta:hover { background:var(--accent) !important; }
+.hamburger { display:none; flex-direction:column; gap:6px; background:none; border:none; cursor:pointer; padding:4px; }
+.hamburger span { display:block; width:24px; height:1.5px; background:var(--ink); transition:transform 0.3s,opacity 0.3s; }
+.hamburger.open span:nth-child(1) { transform:translateY(7.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity:0; }
+.hamburger.open span:nth-child(3) { transform:translateY(-7.5px) rotate(-45deg); }
+.mobile-nav { display:none; position:fixed; top:68px; left:0; right:0; background:#fff; border-bottom:2px solid var(--ink); z-index:99; flex-direction:column; }
+.mobile-nav.open { display:flex; }
+.mobile-nav a { padding:18px 24px; font-size:15px; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--rule-light); }
 
-  /* HERO */
-  .hero { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:0 48px 80px; position:relative; }
-  .hero-rule { position:absolute; top:64px; left:48px; right:48px; height:1px; background:var(--rule); transform-origin:left; transform:scaleX(0); animation:expandRule 1s ease 0.6s forwards; }
-  .hero-sub { position:absolute; top:92px; right:48px; font-size:12px; letter-spacing:0.18em; color:var(--ink-light); opacity:0; animation:fadeIn 0.8s ease 1s forwards; }
-  .hero-body { max-width:640px; opacity:0; transform:translateY(24px); animation:slideUp 1s ease 0.4s forwards; }
-  .hero-label { font-size:14px; letter-spacing:0.12em; color:var(--ink-mid); margin-bottom:20px; }
-  .hero-name { font-family:var(--ff-serif); font-size:clamp(48px,7vw,80px); font-weight:300; letter-spacing:0.14em; line-height:1.05; margin-bottom:6px; }
-  .hero-name-en { font-size:13px; letter-spacing:0.3em; color:var(--ink-light); margin-bottom:44px; }
-  .hero-desc { font-size:15px; color:var(--ink-mid); letter-spacing:0.06em; line-height:2.4; border-left:1px solid var(--accent); padding-left:20px; max-width:440px; }
+/* HERO */
+.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; padding-top:68px; }
+.hero-left { display:flex; flex-direction:column; justify-content:center; padding:80px 56px 80px 48px; }
+.hero-badge { display:inline-block; font-size:11px; letter-spacing:0.25em; color:var(--accent); border:1px solid var(--accent); padding:6px 14px; margin-bottom:32px; }
+.hero-title { font-family:var(--ff-serif); font-size:clamp(30px,3.8vw,50px); font-weight:400; letter-spacing:0.12em; line-height:1.5; margin-bottom:6px; }
+.hero-title-en { font-size:11px; letter-spacing:0.28em; color:var(--ink-xlight); margin-bottom:44px; }
+.hero-lead { font-size:17px; line-height:2.3; color:var(--ink-mid); margin-bottom:52px; border-left:3px solid var(--accent); padding-left:20px; max-width:380px; }
+.hero-actions { display:flex; gap:16px; flex-wrap:wrap; }
+.btn-primary { background:var(--ink); color:#fff; padding:16px 36px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.2em; text-decoration:none; transition:background 0.3s; }
+.btn-primary:hover { background:var(--accent); }
+.btn-secondary { background:transparent; color:var(--ink); border:1px solid var(--ink); padding:15px 36px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.2em; text-decoration:none; transition:all 0.3s; }
+.btn-secondary:hover { background:var(--ink); color:#fff; }
+.hero-right { display:grid; grid-template-columns:3fr 2fr; grid-template-rows:1fr 1fr; gap:3px; background:var(--rule-light); overflow:hidden; }
+.hero-photo { overflow:hidden; position:relative; }
+.hero-photo img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s ease; }
+.hero-photo:hover img { transform:scale(1.03); }
+.hero-photo.large { grid-row:1/3; }
 
-  /* SECTION */
-  section { padding:120px 48px; border-top:1px solid var(--rule); }
-  .section-header { display:flex; align-items:baseline; gap:24px; margin-bottom:64px; }
-  .section-num { font-size:12px; letter-spacing:0.2em; color:var(--ink-light); flex-shrink:0; }
-  .section-title { font-family:var(--ff-serif); font-size:24px; font-weight:300; letter-spacing:0.18em; }
+/* PHOTO STRIP */
+.photo-strip { display:grid; grid-template-columns:2fr 3fr 2fr; gap:3px; height:320px; background:var(--rule-light); }
+.strip-photo { overflow:hidden; position:relative; }
+.strip-photo img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s ease; }
+.strip-photo:hover img { transform:scale(1.04); }
+.strip-caption { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.5)); color:#fff; font-size:11px; letter-spacing:0.15em; padding:20px 16px 12px; opacity:0; transition:opacity 0.3s; }
+.strip-photo:hover .strip-caption { opacity:1; }
 
-  /* ABOUT */
-  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
-  .about-text { font-size:15px; color:var(--ink-mid); line-height:2.4; letter-spacing:0.05em; }
-  .about-text p+p { margin-top:1.8em; }
-  .about-profile { border-left:1px solid var(--rule); padding-left:48px; }
-  .profile-row { display:flex; padding:16px 0; border-bottom:1px solid var(--rule); }
-  .profile-label { width:80px; flex-shrink:0; color:var(--ink-light); letter-spacing:0.1em; font-size:11px; padding-top:3px; }
-  .profile-value { font-size:14px; color:var(--ink-mid); letter-spacing:0.05em; line-height:1.9; }
+/* SECTION */
+section { padding:100px 48px; }
+.section-header { display:flex; align-items:baseline; gap:20px; margin-bottom:56px; }
+.section-num { font-size:11px; letter-spacing:0.25em; color:var(--ink-xlight); flex-shrink:0; }
+.section-title { font-family:var(--ff-serif); font-size:26px; font-weight:400; letter-spacing:0.15em; }
+.section-title-en { font-size:11px; letter-spacing:0.3em; color:var(--ink-xlight); margin-top:4px; }
 
-  /* PHOTO STRIP */
-  .photo-strip { border-top:1px solid var(--rule); display:grid; grid-template-columns:2fr 1fr; height:400px; overflow:hidden; }
-  .photo-strip-main { position:relative; overflow:hidden; }
-  .photo-strip-main img { width:100%; height:100%; object-fit:cover; object-position:center 40%; filter:brightness(0.88); transition:transform 0.8s ease; }
-  .photo-strip-main:hover img { transform:scale(1.02); }
-  .photo-strip-side { display:grid; grid-template-rows:1fr 1fr; }
-  .photo-strip-side-item { position:relative; overflow:hidden; border-left:1px solid var(--paper); }
-  .photo-strip-side-item+.photo-strip-side-item { border-top:1px solid var(--paper); }
-  .photo-strip-side-item img { width:100%; height:100%; object-fit:cover; object-position:center; filter:brightness(0.82); transition:transform 0.8s ease; }
-  .photo-strip-side-item:hover img { transform:scale(1.04); }
-  .photo-caption { position:absolute; bottom:16px; left:20px; font-size:10px; letter-spacing:0.2em; color:rgba(255,255,255,0.65); font-family:var(--ff-sans); }
+/* ABOUT */
+#about { background:var(--paper-warm); border-top:1px solid var(--rule-light); }
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.about-text { font-size:16px; color:var(--ink-mid); line-height:2.3; }
+.about-text p+p { margin-top:1.8em; }
+.about-profile { background:var(--paper); border:1px solid var(--rule); padding:40px; }
+.profile-row { display:flex; padding:14px 0; border-bottom:1px solid var(--rule-light); }
+.profile-row:last-child { border-bottom:none; }
+.profile-label { width:88px; flex-shrink:0; color:var(--ink-xlight); font-size:12px; letter-spacing:0.1em; padding-top:2px; }
+.profile-value { font-size:15px; color:var(--ink-mid); line-height:1.9; }
 
-  /* SERVICES */
-  .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); }
-  .service-item { background:var(--paper); padding:44px 36px; transition:background 0.3s; }
-  .service-item:hover { background:var(--paper-warm); }
-  .service-num { font-size:11px; letter-spacing:0.2em; color:var(--ink-light); margin-bottom:20px; display:block; }
-  .service-name { font-family:var(--ff-serif); font-size:18px; font-weight:300; letter-spacing:0.1em; margin-bottom:16px; line-height:1.7; }
-  .service-desc { font-size:13px; color:var(--ink-light); line-height:2.1; letter-spacing:0.04em; }
-  .service-item.featured { background:var(--ink); color:var(--paper); }
-  .service-item.featured:hover { background:#2a2a28; }
-  .service-item.featured .service-num, .service-item.featured .service-desc { color:#777772; }
-  .service-item.featured .service-name { color:var(--paper); }
+/* SERVICES */
+#services { border-top:1px solid var(--rule-light); }
+.services-intro { font-size:16px; color:var(--ink-mid); line-height:2.2; max-width:640px; margin-bottom:52px; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--rule-light); }
+.service-item { background:var(--paper); padding:40px 32px; position:relative; transition:background 0.25s; }
+.service-item:hover { background:#faf8f4; }
+.service-item::after { content:''; position:absolute; bottom:0; left:32px; right:32px; height:2px; background:transparent; transition:background 0.25s; }
+.service-item:hover::after { background:var(--accent-light); }
+.service-num { font-size:10px; letter-spacing:0.25em; color:var(--ink-xlight); margin-bottom:18px; display:block; }
+.service-name { font-family:var(--ff-serif); font-size:18px; font-weight:400; letter-spacing:0.08em; margin-bottom:14px; line-height:1.6; color:var(--ink); }
+.service-desc { font-size:14px; color:var(--ink-light); line-height:2.1; }
+.service-tag { display:inline-block; margin-top:14px; font-size:10px; letter-spacing:0.18em; color:var(--ink-xlight); border-bottom:1px solid var(--rule); padding-bottom:2px; }
+.service-item.highlight { background:var(--paper-warm); border-left:3px solid var(--accent); }
+.service-item.highlight:hover { background:#ede8de; }
+.service-item.highlight .service-name { color:var(--accent); }
+.service-item.highlight .service-tag { color:var(--accent); border-color:var(--accent-light); }
 
-  /* CONTACT */
-  .contact-inner { max-width:580px; }
-  .contact-note { font-size:15px; color:var(--ink-mid); letter-spacing:0.05em; line-height:2.4; margin-bottom:16px; }
-  .contact-note-sub { font-size:13px; color:var(--ink-light); letter-spacing:0.04em; line-height:2; margin-bottom:48px; border-left:1px solid var(--rule); padding-left:16px; }
-  .form-row { margin-bottom:36px; }
-  .form-label { display:block; font-size:11px; letter-spacing:0.2em; color:var(--ink-light); margin-bottom:10px; }
-  .form-input, .form-textarea { width:100%; background:transparent; border:none; border-bottom:1px solid var(--rule); padding:12px 0; font-family:var(--ff-sans); font-size:15px; font-weight:300; color:var(--ink); letter-spacing:0.05em; outline:none; transition:border-color 0.2s; -webkit-appearance:none; border-radius:0; }
-  .form-input:focus, .form-textarea:focus { border-bottom-color:var(--accent); }
-  .form-textarea { resize:none; height:130px; line-height:2; }
-  .consent-row { display:flex; align-items:flex-start; gap:12px; margin-bottom:32px; }
-  .consent-row input[type="checkbox"] { margin-top:4px; flex-shrink:0; accent-color:var(--accent); width:16px; height:16px; cursor:pointer; }
-  .consent-label { font-size:13px; color:var(--ink-mid); line-height:1.9; letter-spacing:0.04em; }
-  .consent-label a { color:var(--accent); text-decoration:none; }
-  .consent-label a:hover { text-decoration:underline; }
-  .form-submit { display:inline-flex; align-items:center; gap:16px; background:none; border:1px solid var(--ink); padding:16px 40px; font-family:var(--ff-sans); font-size:13px; font-weight:300; letter-spacing:0.25em; color:var(--ink); cursor:pointer; transition:background 0.3s,color 0.3s; margin-top:8px; }
-  .form-submit:hover { background:var(--ink); color:var(--paper); }
-  .form-submit:disabled { opacity:0.4; cursor:not-allowed; }
-  .form-submit-arrow { transition:transform 0.2s; }
-  .form-submit:hover .form-submit-arrow { transform:translateX(4px); }
+/* ACCESS */
+#access { background:var(--paper-dark); color:#e8e4da; border-top:none; }
+#access .section-title { color:#e8e4da; }
+#access .section-num { color:#555; }
+.access-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+.access-address { font-size:16px; line-height:2.2; color:#999; margin-bottom:36px; }
+.access-address strong { color:#e8e4da; display:block; margin-bottom:6px; font-weight:400; font-family:var(--ff-serif); font-size:19px; letter-spacing:0.1em; }
+.access-routes { display:flex; flex-direction:column; }
+.access-route { display:flex; align-items:baseline; gap:16px; padding:16px 0; border-bottom:1px solid #2a2a28; }
+.access-route:first-child { border-top:1px solid #2a2a28; }
+.route-line { font-size:11px; letter-spacing:0.15em; color:var(--accent-light); flex-shrink:0; width:72px; }
+.route-desc { font-size:14px; color:#888; line-height:1.9; }
+.route-note { font-size:12px; color:#555; margin-top:20px; line-height:1.8; }
+.access-map { overflow:hidden; border:1px solid #2a2a28; }
+.access-map iframe { display:block; width:100%; height:380px; filter:grayscale(15%) brightness(0.9); }
 
-  /* FOOTER */
-  footer { border-top:1px solid var(--rule); padding:40px 48px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
-  .footer-address { font-size:13px; color:var(--ink-light); letter-spacing:0.06em; line-height:2.2; font-style:normal; }
-  .footer-address a { color:var(--ink-light); text-decoration:none; }
-  .footer-address a:hover { text-decoration:underline; }
-  .footer-right { display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
-  .footer-right a { font-size:12px; color:var(--ink-light); text-decoration:none; letter-spacing:0.1em; transition:color 0.2s; }
-  .footer-right a:hover { color:var(--ink); }
-  .footer-copy { font-size:12px; color:var(--ink-light); letter-spacing:0.1em; }
+/* CONTACT */
+#contact { background:var(--paper-warm); border-top:1px solid var(--rule-light); }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.contact-lead { font-size:17px; color:var(--ink-mid); line-height:2.2; margin-bottom:16px; }
+.contact-conditions { font-size:14px; color:var(--ink-light); line-height:2.1; border-left:2px solid var(--rule); padding-left:16px; margin-bottom:40px; }
+.contact-direct { margin-top:32px; padding-top:32px; border-top:1px solid var(--rule); }
+.contact-direct-label { font-size:11px; letter-spacing:0.2em; color:var(--ink-xlight); margin-bottom:12px; }
+.contact-direct-tel { font-size:18px; color:var(--ink); text-decoration:none; display:block; font-weight:400; }
+.contact-direct-tel:hover { color:var(--accent); }
+.contact-form { background:var(--paper); border:1px solid var(--rule); padding:48px 40px; }
+.form-row { margin-bottom:28px; }
+.form-label { display:block; font-size:12px; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:8px; }
+.form-label span { color:#b04040; margin-left:4px; font-size:10px; }
+.form-input,.form-textarea { width:100%; background:var(--paper-warm); border:1px solid var(--rule); padding:12px 16px; font-family:var(--ff-sans); font-size:15px; font-weight:300; color:var(--ink); outline:none; transition:border-color 0.2s; -webkit-appearance:none; border-radius:0; }
+.form-input:focus,.form-textarea:focus { border-color:var(--accent); background:var(--paper); }
+.form-textarea { resize:none; height:140px; line-height:1.8; }
+.consent-row { display:flex; align-items:flex-start; gap:10px; margin-bottom:28px; }
+.consent-row input[type="checkbox"] { margin-top:3px; flex-shrink:0; accent-color:var(--accent); width:16px; height:16px; cursor:pointer; }
+.consent-label { font-size:13px; color:var(--ink-mid); line-height:1.9; }
+.consent-label a { color:var(--accent); text-decoration:none; }
+.form-submit { width:100%; background:var(--ink); color:#fff; border:none; padding:18px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.25em; cursor:pointer; transition:background 0.3s; }
+.form-submit:hover { background:var(--accent); }
+.form-submit:disabled { opacity:0.4; cursor:not-allowed; }
 
-  /* ANIMATIONS */
-  @keyframes fadeIn { to { opacity:1; } }
-  @keyframes slideUp { to { opacity:1; transform:translateY(0); } }
-  @keyframes expandRule { to { transform:scaleX(1); } }
-  .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.8s ease,transform 0.8s ease; }
-  .reveal.visible { opacity:1; transform:translateY(0); }
+/* FOOTER */
+footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-template-columns:1fr auto; gap:32px; align-items:end; border-top:3px solid var(--accent); }
+.footer-name { font-family:var(--ff-serif); font-size:16px; color:#ccc; letter-spacing:0.15em; margin-bottom:12px; font-weight:300; }
+.footer-address { font-size:12px; line-height:2.2; color:#555; letter-spacing:0.05em; font-style:normal; }
+.footer-address a { color:#666; text-decoration:none; }
+.footer-address a:hover { color:#999; }
+.footer-right { display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
+.footer-links { display:flex; gap:20px; }
+.footer-links a { font-size:11px; color:#444; text-decoration:none; letter-spacing:0.1em; transition:color 0.2s; }
+.footer-links a:hover { color:#777; }
+.footer-copy { font-size:11px; color:#333; letter-spacing:0.1em; }
 
-  /* MOBILE */
-  @media (max-width:768px) {
-    header { padding:0 20px; }
-    nav { display:none; }
-    .hamburger { display:flex; }
-    .hero { padding:80px 20px 60px; min-height:100svh; }
-    .hero-rule { left:20px; right:20px; }
-    .hero-sub { right:20px; font-size:11px; }
-    .hero-desc { font-size:14px; }
-    section { padding:72px 20px; }
-    .about-grid { grid-template-columns:1fr; gap:48px; }
-    .about-text { font-size:14px; }
-    .about-profile { border-left:none; padding-left:0; border-top:1px solid var(--rule); padding-top:40px; }
-    .photo-strip { grid-template-columns:1fr; height:auto; }
-    .photo-strip-main { height:260px; }
-    .photo-strip-side { grid-template-columns:1fr 1fr; grid-template-rows:1fr; height:160px; }
-    .photo-strip-side-item { border-left:none; border-top:1px solid var(--paper); }
-    .photo-strip-side-item+.photo-strip-side-item { border-left:1px solid var(--paper); border-top:1px solid var(--paper); }
-    .services-grid { grid-template-columns:1fr; }
-    .service-item { padding:36px 24px; }
-    .form-input, .form-textarea { font-size:16px; }
-    footer { flex-direction:column; padding:32px 20px; gap:16px; }
-    .footer-right { align-items:flex-start; }
-  }
+/* ANIMATIONS */
+@keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+.hero-left > * { opacity:0; animation:fadeInUp 0.8s ease forwards; }
+.hero-badge { animation-delay:0.1s; }
+.hero-title { animation-delay:0.2s; }
+.hero-title-en { animation-delay:0.3s; }
+.hero-lead { animation-delay:0.4s; }
+.hero-actions { animation-delay:0.5s; }
+.reveal { opacity:0; transform:translateY(16px); transition:opacity 0.7s ease,transform 0.7s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* MOBILE */
+@media (max-width:900px) {
+  header { padding:0 20px; }
+  nav { display:none; }
+  .hamburger { display:flex; }
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-left { padding:48px 24px; }
+  .hero-right { height:260px; }
+  .photo-strip { height:200px; grid-template-columns:1fr 1fr 1fr; }
+  section { padding:72px 24px; }
+  .about-grid,.access-grid,.contact-grid { grid-template-columns:1fr; gap:48px; }
+  .services-grid { grid-template-columns:1fr; }
+  footer { grid-template-columns:1fr; padding:40px 24px; }
+  .footer-right { align-items:flex-start; }
+  .contact-form { padding:32px 24px; }
+}
+@media (max-width:600px) {
+  .hero-actions { flex-direction:column; }
+  .form-input,.form-textarea { font-size:16px; }
+}
 </style>
 </head>
 <body>
 
 <header>
-  <a href="#top" class="logo">結城宏太税理士事務所</a>
+  <a href="#top" class="logo-wrap">
+    <span class="logo-main">結城宏太税理士事務所</span>
+    <span class="logo-sub">YUKI KOTA TAX ACCOUNTANT OFFICE</span>
+  </a>
   <nav>
     <a href="#about">事務所について</a>
     <a href="#services">業務内容</a>
-    <a href="#contact">お問い合わせ</a>
+    <a href="#access">アクセス</a>
+    <a href="#contact" class="nav-cta">お問い合わせ</a>
   </nav>
   <button class="hamburger" id="hamburger" aria-label="メニュー">
     <span></span><span></span><span></span>
@@ -167,34 +214,51 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="#about" onclick="closeMenu()">事務所について</a>
   <a href="#services" onclick="closeMenu()">業務内容</a>
+  <a href="#access" onclick="closeMenu()">アクセス</a>
   <a href="#contact" onclick="closeMenu()">お問い合わせ</a>
 </div>
 
-<section class="hero" id="top">
-  <div class="hero-rule"></div>
-  <span class="hero-sub">Osaka, Japan</span>
-  <div class="hero-body">
-    <p class="hero-label">税理士</p>
-    <h1 class="hero-name">結城　宏太</h1>
-    <p class="hero-name-en">Certified Public Tax Accountant</p>
-    <p class="hero-desc">
+<div class="hero" id="top">
+  <div class="hero-left">
+    <span class="hero-badge">税理士事務所 / 大阪・梅田</span>
+    <h1 class="hero-title">結城宏太<br>税理士事務所</h1>
+    <p class="hero-title-en">YUKI KOTA TAX ACCOUNTANT OFFICE</p>
+    <p class="hero-lead">
       データが整えば、判断が変わる。<br>
       バックオフィスの仕組みを整え、<br>
       税務・財務の観点から経営を支援します。
     </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">無料相談を申し込む</a>
+      <a href="#services" class="btn-secondary">業務内容を見る</a>
+    </div>
   </div>
-</section>
+  <div class="hero-right">
+    <div class="hero-photo large">
+      <img src="images/lobby.jpg" alt="ゲートタワーオフィス ロビー">
+    </div>
+    <div class="hero-photo">
+      <img src="images/tower.jpg" alt="グラングリーン大阪 タワー外観">
+    </div>
+    <div class="hero-photo">
+      <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
+    </div>
+  </div>
+</div>
 
 <section id="about">
   <div class="section-header reveal">
     <span class="section-num">01</span>
-    <h2 class="section-title">事務所について</h2>
+    <div>
+      <h2 class="section-title">事務所について</h2>
+      <p class="section-title-en">ABOUT</p>
+    </div>
   </div>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>経営判断の質は、その判断を支えるデータの質に比例します。売上・費用・資金繰り——これらの原始データが正確に、素早く会計情報へと変換される体制が整えば、経営者は「数字を集める」時間を「数字を読む」時間に充てることができます。</p>
-      <p>当事務所は、顧問先が自社のデータを自分で持てる仕組みの構築を重視します。記帳を代行するのではなく、自動化・標準化された会計フローを顧問先とともに設計し、そのデータをもとに税務・財務の観点から意思決定を支援します。</p>
-      <p>税務申告・相続・事業承継といった専門領域はもちろん、バックオフィスの業務設計から経営数値の活用まで、大阪・グラングリーン大阪を拠点に対応します。</p>
+      <p>当事務所の代表・結城宏太は、兵庫県内の税理士法人に2013年より勤務し、法人顧問業務を中心に幅広い税務実務を積みました。大学院修士課程の修了と税理士試験合格を経て2018年に税理士登録。その後、社員税理士として多くの中小企業オーナーの決算・申告から資金繰り相談まで携わってきました。</p>
+      <p>実務を重ねるなかで強く意識するようになったのが、バックオフィスの仕組みの重要性です。経理処理が属人化し、数字が経営に活かされないまま決算だけをこなすという現場を多く見てきました。それを変えたいという思いから、業務フローの設計と自動記帳体制の構築に力を入れています。</p>
+      <p>税務の専門家としてだけでなく、経営の仕組みづくりから一緒に考えられる税理士を目指し、2026年4月に大阪・グラングリーン大阪にて独立開業しました。</p>
     </div>
     <div class="about-profile reveal">
       <div class="profile-row">
@@ -217,149 +281,201 @@
   </div>
 </section>
 
+<!-- 写真帯 -->
 <div class="photo-strip reveal">
-  <div class="photo-strip-main">
-    <img src="images/lobby.jpg" alt="グラングリーン大阪 ゲートタワーオフィス エントランス" loading="lazy">
-    <span class="photo-caption">GATE TOWER OFFICE — 7F</span>
+  <div class="strip-photo">
+    <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
+    <span class="strip-caption">グラングリーン大阪</span>
   </div>
-  <div class="photo-strip-side">
-    <div class="photo-strip-side-item">
-      <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観" loading="lazy">
-      <span class="photo-caption">GRAND GREEN OSAKA</span>
-    </div>
-    <div class="photo-strip-side-item">
-      <img src="images/tower.jpg" alt="グラングリーン大阪 ゲートタワー" loading="lazy">
-    </div>
+  <div class="strip-photo">
+    <img src="images/lobby.jpg" alt="ゲートタワーオフィス ロビー">
+    <span class="strip-caption">GATE TOWER OFFICE</span>
+  </div>
+  <div class="strip-photo">
+    <img src="images/tower.jpg" alt="グラングリーン大阪 タワー外観">
+    <span class="strip-caption">南館 ゲートタワー</span>
   </div>
 </div>
 
 <section id="services">
   <div class="section-header reveal">
     <span class="section-num">02</span>
-    <h2 class="section-title">業務内容</h2>
+    <div>
+      <h2 class="section-title">業務内容</h2>
+      <p class="section-title-en">SERVICES</p>
+    </div>
   </div>
+  <p class="services-intro reveal">中小企業の経営者が直面する税務・財務上の課題に幅広く対応します。各業務の詳細ページは順次公開予定です。</p>
   <div class="services-grid reveal">
     <div class="service-item">
       <span class="service-num">01</span>
       <h3 class="service-name">税務申告・<br>税務顧問</h3>
       <p class="service-desc">法人税・所得税・消費税の申告。月次試算表から決算まで、経営判断を支える数字を整えます。</p>
+      <span class="service-tag">詳細ページ準備中</span>
     </div>
     <div class="service-item">
       <span class="service-num">02</span>
       <h3 class="service-name">相続・<br>事業承継</h3>
       <p class="service-desc">相続税申告・節税対策・納税資金の確保。後継者への円滑な事業承継スキームを構築します。</p>
+      <span class="service-tag">詳細ページ準備中</span>
     </div>
     <div class="service-item">
       <span class="service-num">03</span>
       <h3 class="service-name">会計環境の<br>構築・支援</h3>
       <p class="service-desc">自動記帳が機能する体制の設計・導入支援。顧問先を主体に、データが自然と集まるフローを整えます。</p>
+      <span class="service-tag">詳細ページ準備中</span>
     </div>
-    <div class="service-item featured">
+    <div class="service-item highlight">
       <span class="service-num">04</span>
       <h3 class="service-name">業務フロー<br>整備支援</h3>
-      <p class="service-desc">バックオフィス業務を可視化し、属人化の解消と業務効率化を支援します。</p>
+      <p class="service-desc">バックオフィス業務を可視化し、属人化の解消と業務効率化を支援します。当事務所が特に力を入れている領域です。</p>
+      <span class="service-tag">詳細ページ準備中</span>
     </div>
     <div class="service-item">
       <span class="service-num">05</span>
       <h3 class="service-name">資金計画・<br>経営計画</h3>
       <p class="service-desc">キャッシュフロー予測・損益シミュレーションで、将来の経営判断を数値で裏付けます。</p>
+      <span class="service-tag">詳細ページ準備中</span>
     </div>
     <div class="service-item">
       <span class="service-num">06</span>
       <h3 class="service-name">税務調査・<br>各種対応</h3>
       <p class="service-desc">税務調査対応・不服申立て・各種届出書類の作成。専門家として的確にサポートします。</p>
+      <span class="service-tag">詳細ページ準備中</span>
+    </div>
+  </div>
+</section>
+
+<section id="access">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <div>
+      <h2 class="section-title">アクセス</h2>
+      <p class="section-title-en" style="color:#444;">ACCESS</p>
+    </div>
+  </div>
+  <div class="access-grid reveal">
+    <div>
+      <div class="access-address">
+        <strong>結城宏太税理士事務所</strong>
+        〒530-0011<br>
+        大阪府大阪市北区大深町5-54<br>
+        グラングリーン大阪 南館 ゲートタワー7階<br><br>
+        TEL：<a href="tel:0677886391" style="color:#888;text-decoration:none;">06-7688-6391</a>
+      </div>
+      <div class="access-routes">
+        <div class="access-route">
+          <span class="route-line">JR</span>
+          <span class="route-desc">「大阪駅」うめきた地下口より<br>徒歩約5分（地下通路にて直結）</span>
+        </div>
+        <div class="access-route">
+          <span class="route-line">大阪メトロ</span>
+          <span class="route-desc">御堂筋線「梅田駅」北改札より<br>徒歩約10分</span>
+        </div>
+        <div class="access-route">
+          <span class="route-line">阪急</span>
+          <span class="route-desc">「大阪梅田駅」2階中央改札口より<br>徒歩約12分</span>
+        </div>
+        <div class="access-route">
+          <span class="route-line">阪神</span>
+          <span class="route-desc">「大阪梅田駅」西口より<br>徒歩約8分（要精査）</span>
+        </div>
+      </div>
+      <p class="route-note">※ 所要時間は目安です。ご来所の際はご連絡ください。</p>
+    </div>
+    <div class="access-map">
+      <iframe src="https://maps.google.com/maps?q=グラングリーン大阪+南館+ゲートタワー,大阪市北区大深町5-54&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="結城宏太税理士事務所の地図"></iframe>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="section-header reveal">
-    <span class="section-num">03</span>
-    <h2 class="section-title">お問い合わせ</h2>
-  </div>
-  <div class="contact-inner reveal">
-    <p class="contact-note">
-      初回30分程度のご相談は無料で承ります（一般的なご相談に限ります）。<br>
-      内容によっては、事前に決算書・試算表等の資料をご準備いただく場合があります。
-    </p>
-    <p class="contact-note-sub">
-      通常3営業日以内を目安にご返信いたします。内容により前後する場合があります。
-    </p>
-
-    <div data-fs-success style="display:none; font-size:15px; color:var(--accent); letter-spacing:0.08em; line-height:2.4; padding:24px 0 24px 20px; border-left:1px solid var(--accent);">
-      お問い合わせありがとうございます。<br>
-      通常3営業日以内を目安にご返信いたします。
+    <span class="section-num">04</span>
+    <div>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-title-en">CONTACT</p>
     </div>
-    <div data-fs-error style="display:none; font-size:13px; color:#b04040; letter-spacing:0.06em; margin-bottom:24px;"></div>
-
-    <form id="contactForm">
-      <div class="form-row">
-        <label class="form-label" for="name">お名前</label>
-        <input class="form-input" type="text" id="name" name="name" required autocomplete="name" data-fs-field>
-        <span data-fs-error="name" style="font-size:12px; color:#b04040;"></span>
+  </div>
+  <div class="contact-grid reveal">
+    <div>
+      <p class="contact-lead">初回30分程度のご相談は無料で承ります。</p>
+      <div class="contact-conditions">
+        一般的なご相談に限ります。<br>
+        内容によっては、事前に決算書・試算表等の資料をご準備いただく場合があります。<br>
+        通常3営業日以内を目安にご返信いたします（内容により前後する場合があります）。
       </div>
-      <div class="form-row">
-        <label class="form-label" for="company">会社名・屋号</label>
-        <input class="form-input" type="text" id="company" name="company" autocomplete="organization">
+      <div class="contact-direct">
+        <p class="contact-direct-label">お電話でのご連絡</p>
+        <a href="tel:0677886391" class="contact-direct-tel">06-7688-6391</a>
       </div>
-      <div class="form-row">
-        <label class="form-label" for="email">メールアドレス</label>
-        <input class="form-input" type="email" id="email" name="email" required autocomplete="email" data-fs-field>
-        <span data-fs-error="email" style="font-size:12px; color:#b04040;"></span>
+    </div>
+    <div class="contact-form">
+      <div data-fs-success style="display:none; font-size:15px; color:var(--accent); line-height:2.4; padding:16px 0;">
+        お問い合わせありがとうございます。<br>通常3営業日以内を目安にご返信いたします。
       </div>
-      <div class="form-row">
-        <label class="form-label" for="message">お問い合わせ内容</label>
-        <textarea class="form-textarea" id="message" name="message" required data-fs-field></textarea>
-        <span data-fs-error="message" style="font-size:12px; color:#b04040;"></span>
-      </div>
-      <div class="consent-row">
-        <input type="checkbox" id="consent" name="consent" required>
-        <label class="consent-label" for="consent">
-          <a href="/privacy.html" target="_blank">個人情報保護方針</a>に同意のうえ送信します。
-        </label>
-      </div>
-      <button class="form-submit" type="submit" data-fs-submit-btn>
-        送信する <span class="form-submit-arrow">&#8594;</span>
-      </button>
-    </form>
+      <div data-fs-error style="display:none; font-size:13px; color:#b04040; margin-bottom:20px;"></div>
+      <form id="contactForm">
+        <div class="form-row">
+          <label class="form-label" for="name">お名前<span>必須</span></label>
+          <input class="form-input" type="text" id="name" name="name" required autocomplete="name" data-fs-field>
+          <span data-fs-error="name" style="font-size:12px;color:#b04040;"></span>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="company">会社名・屋号</label>
+          <input class="form-input" type="text" id="company" name="company" autocomplete="organization">
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="email">メールアドレス<span>必須</span></label>
+          <input class="form-input" type="email" id="email" name="email" required autocomplete="email" data-fs-field>
+          <span data-fs-error="email" style="font-size:12px;color:#b04040;"></span>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="message">お問い合わせ内容<span>必須</span></label>
+          <textarea class="form-textarea" id="message" name="message" required data-fs-field></textarea>
+          <span data-fs-error="message" style="font-size:12px;color:#b04040;"></span>
+        </div>
+        <div class="consent-row">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label class="consent-label" for="consent">
+            <a href="privacy.html">個人情報保護方針</a>に同意のうえ送信します。
+          </label>
+        </div>
+        <button class="form-submit" type="submit" data-fs-submit-btn>送信する &#8594;</button>
+      </form>
+    </div>
   </div>
 </section>
 
 <footer>
-  <address class="footer-address">
-    〒530-0011　大阪府大阪市北区大深町5-54<br>
-    グラングリーン大阪 南館 ゲートタワー7階<br>
-    TEL <a href="tel:0677886391">06-7688-6391</a>
-  </address>
+  <div>
+    <p class="footer-name">結城宏太税理士事務所</p>
+    <address class="footer-address">
+      〒530-0011　大阪府大阪市北区大深町5-54　グラングリーン大阪 南館 ゲートタワー7階<br>
+      TEL <a href="tel:0677886391">06-7688-6391</a>
+    </address>
+  </div>
   <div class="footer-right">
-    <a href="/privacy.html">個人情報保護方針</a>
-    <span class="footer-copy">&#169; 2026 結城宏太税理士事務所</span>
+    <div class="footer-links">
+      <a href="privacy.html">個人情報保護方針</a>
+      <a href="#access">アクセス</a>
+    </div>
+    <p class="footer-copy">&#169; 2026 結城宏太税理士事務所</p>
   </div>
 </footer>
 
 <script>
   const ham = document.getElementById('hamburger');
   const mNav = document.getElementById('mobileNav');
-  ham.addEventListener('click', () => {
-    ham.classList.toggle('open');
-    mNav.classList.toggle('open');
-  });
-  function closeMenu() {
-    ham.classList.remove('open');
-    mNav.classList.remove('open');
-  }
-
+  ham.addEventListener('click', () => { ham.classList.toggle('open'); mNav.classList.toggle('open'); });
+  function closeMenu() { ham.classList.remove('open'); mNav.classList.remove('open'); }
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 100);
-        io.unobserve(e.target);
-      }
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); io.unobserve(e.target); }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.06 });
   reveals.forEach(el => io.observe(el));
-
   window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
   formspree('initForm', { formElement: '#contactForm', formId: 'maqlllje' });
 </script>
