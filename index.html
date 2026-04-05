@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援</title>
 <meta name="description" content="大阪の中小企業向けに、税務顧問・財務支援・会計環境の構築を行う結城宏太税理士事務所。バックオフィスの仕組みを整え、税務・財務の観点から経営判断を支援します。">
+<meta property="og:title" content="結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援">
+<meta property="og:description" content="データが整えば、判断が変わる。バックオフィスの仕組みを整え、税務・財務の観点から経営を支援します。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yuki-tax.jp">
+<meta property="og:image" content="https://yuki-tax.jp/images/lobby.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 <style>
@@ -32,6 +38,7 @@
   .mobile-nav.open { display:flex; }
   .mobile-nav a { padding:16px 0; font-size:15px; letter-spacing:0.1em; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--rule); }
 
+  /* HERO */
   .hero { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:0 48px 80px; position:relative; }
   .hero-rule { position:absolute; top:64px; left:48px; right:48px; height:1px; background:var(--rule); transform-origin:left; transform:scaleX(0); animation:expandRule 1s ease 0.6s forwards; }
   .hero-sub { position:absolute; top:92px; right:48px; font-size:12px; letter-spacing:0.18em; color:var(--ink-light); opacity:0; animation:fadeIn 0.8s ease 1s forwards; }
@@ -41,11 +48,13 @@
   .hero-name-en { font-size:13px; letter-spacing:0.3em; color:var(--ink-light); margin-bottom:44px; }
   .hero-desc { font-size:15px; color:var(--ink-mid); letter-spacing:0.06em; line-height:2.4; border-left:1px solid var(--accent); padding-left:20px; max-width:440px; }
 
+  /* SECTION */
   section { padding:120px 48px; border-top:1px solid var(--rule); }
   .section-header { display:flex; align-items:baseline; gap:24px; margin-bottom:64px; }
   .section-num { font-size:12px; letter-spacing:0.2em; color:var(--ink-light); flex-shrink:0; }
   .section-title { font-family:var(--ff-serif); font-size:24px; font-weight:300; letter-spacing:0.18em; }
 
+  /* ABOUT */
   .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
   .about-text { font-size:15px; color:var(--ink-mid); line-height:2.4; letter-spacing:0.05em; }
   .about-text p+p { margin-top:1.8em; }
@@ -54,6 +63,19 @@
   .profile-label { width:80px; flex-shrink:0; color:var(--ink-light); letter-spacing:0.1em; font-size:11px; padding-top:3px; }
   .profile-value { font-size:14px; color:var(--ink-mid); letter-spacing:0.05em; line-height:1.9; }
 
+  /* PHOTO STRIP */
+  .photo-strip { border-top:1px solid var(--rule); display:grid; grid-template-columns:2fr 1fr; height:400px; overflow:hidden; }
+  .photo-strip-main { position:relative; overflow:hidden; }
+  .photo-strip-main img { width:100%; height:100%; object-fit:cover; object-position:center 40%; filter:brightness(0.88); transition:transform 0.8s ease; }
+  .photo-strip-main:hover img { transform:scale(1.02); }
+  .photo-strip-side { display:grid; grid-template-rows:1fr 1fr; }
+  .photo-strip-side-item { position:relative; overflow:hidden; border-left:1px solid var(--paper); }
+  .photo-strip-side-item+.photo-strip-side-item { border-top:1px solid var(--paper); }
+  .photo-strip-side-item img { width:100%; height:100%; object-fit:cover; object-position:center; filter:brightness(0.82); transition:transform 0.8s ease; }
+  .photo-strip-side-item:hover img { transform:scale(1.04); }
+  .photo-caption { position:absolute; bottom:16px; left:20px; font-size:10px; letter-spacing:0.2em; color:rgba(255,255,255,0.65); font-family:var(--ff-sans); }
+
+  /* SERVICES */
   .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); }
   .service-item { background:var(--paper); padding:44px 36px; transition:background 0.3s; }
   .service-item:hover { background:var(--paper-warm); }
@@ -65,6 +87,7 @@
   .service-item.featured .service-num, .service-item.featured .service-desc { color:#777772; }
   .service-item.featured .service-name { color:var(--paper); }
 
+  /* CONTACT */
   .contact-inner { max-width:580px; }
   .contact-note { font-size:15px; color:var(--ink-mid); letter-spacing:0.05em; line-height:2.4; margin-bottom:16px; }
   .contact-note-sub { font-size:13px; color:var(--ink-light); letter-spacing:0.04em; line-height:2; margin-bottom:48px; border-left:1px solid var(--rule); padding-left:16px; }
@@ -84,6 +107,7 @@
   .form-submit-arrow { transition:transform 0.2s; }
   .form-submit:hover .form-submit-arrow { transform:translateX(4px); }
 
+  /* FOOTER */
   footer { border-top:1px solid var(--rule); padding:40px 48px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
   .footer-address { font-size:13px; color:var(--ink-light); letter-spacing:0.06em; line-height:2.2; font-style:normal; }
   .footer-address a { color:var(--ink-light); text-decoration:none; }
@@ -93,22 +117,14 @@
   .footer-right a:hover { color:var(--ink); }
   .footer-copy { font-size:12px; color:var(--ink-light); letter-spacing:0.1em; }
 
-  .privacy-section { padding:80px 48px; border-top:1px solid var(--rule); background:var(--paper-warm); }
-  .privacy-inner { max-width:680px; }
-  .privacy-title { font-family:var(--ff-serif); font-size:18px; font-weight:300; letter-spacing:0.18em; margin-bottom:48px; color:var(--ink); }
-  .privacy-body { font-size:14px; color:var(--ink-mid); line-height:2.4; letter-spacing:0.04em; }
-  .privacy-body p { margin-bottom:1.8em; }
-  .privacy-heading { font-size:11px; letter-spacing:0.2em; color:var(--ink-light); margin-bottom:8px; }
-  .privacy-body a { color:var(--accent); text-decoration:none; }
-  .privacy-body a:hover { text-decoration:underline; }
-  .privacy-date { font-size:12px; color:var(--ink-light); border-top:1px solid var(--rule); padding-top:24px; margin-top:8px; }
-
+  /* ANIMATIONS */
   @keyframes fadeIn { to { opacity:1; } }
   @keyframes slideUp { to { opacity:1; transform:translateY(0); } }
   @keyframes expandRule { to { transform:scaleX(1); } }
   .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.8s ease,transform 0.8s ease; }
   .reveal.visible { opacity:1; transform:translateY(0); }
 
+  /* MOBILE */
   @media (max-width:768px) {
     header { padding:0 20px; }
     nav { display:none; }
@@ -121,12 +137,16 @@
     .about-grid { grid-template-columns:1fr; gap:48px; }
     .about-text { font-size:14px; }
     .about-profile { border-left:none; padding-left:0; border-top:1px solid var(--rule); padding-top:40px; }
+    .photo-strip { grid-template-columns:1fr; height:auto; }
+    .photo-strip-main { height:260px; }
+    .photo-strip-side { grid-template-columns:1fr 1fr; grid-template-rows:1fr; height:160px; }
+    .photo-strip-side-item { border-left:none; border-top:1px solid var(--paper); }
+    .photo-strip-side-item+.photo-strip-side-item { border-left:1px solid var(--paper); border-top:1px solid var(--paper); }
     .services-grid { grid-template-columns:1fr; }
     .service-item { padding:36px 24px; }
     .form-input, .form-textarea { font-size:16px; }
     footer { flex-direction:column; padding:32px 20px; gap:16px; }
     .footer-right { align-items:flex-start; }
-    .privacy-section { padding:60px 20px; }
   }
 </style>
 </head>
@@ -183,15 +203,11 @@
       </div>
       <div class="profile-row">
         <span class="profile-label">資格</span>
-        <span class="profile-value">税理士（登録 2018年）<br>登録番号 139208</span>
+        <span class="profile-value">税理士（2018年登録）<br>登録番号 139208</span>
       </div>
       <div class="profile-row">
         <span class="profile-label">所属</span>
         <span class="profile-value">近畿税理士会大淀支部</span>
-      </div>
-      <div class="profile-row">
-        <span class="profile-label">開業</span>
-        <span class="profile-value">2026年4月</span>
       </div>
       <div class="profile-row">
         <span class="profile-label">所在地</span>
@@ -200,6 +216,22 @@
     </div>
   </div>
 </section>
+
+<div class="photo-strip reveal">
+  <div class="photo-strip-main">
+    <img src="images/lobby.jpg" alt="グラングリーン大阪 ゲートタワーオフィス エントランス" loading="lazy">
+    <span class="photo-caption">GATE TOWER OFFICE — 7F</span>
+  </div>
+  <div class="photo-strip-side">
+    <div class="photo-strip-side-item">
+      <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観" loading="lazy">
+      <span class="photo-caption">GRAND GREEN OSAKA</span>
+    </div>
+    <div class="photo-strip-side-item">
+      <img src="images/tower.jpg" alt="グラングリーン大阪 ゲートタワー" loading="lazy">
+    </div>
+  </div>
+</div>
 
 <section id="services">
   <div class="section-header reveal">
@@ -234,7 +266,7 @@
     </div>
     <div class="service-item">
       <span class="service-num">06</span>
-      <h3 class="service-name">その他<br>税務相談</h3>
+      <h3 class="service-name">税務調査・<br>各種対応</h3>
       <p class="service-desc">税務調査対応・不服申立て・各種届出書類の作成。専門家として的確にサポートします。</p>
     </div>
   </div>
@@ -283,7 +315,7 @@
       <div class="consent-row">
         <input type="checkbox" id="consent" name="consent" required>
         <label class="consent-label" for="consent">
-          <a href="#privacy">個人情報保護方針</a>に同意のうえ送信します。
+          <a href="/privacy.html" target="_blank">個人情報保護方針</a>に同意のうえ送信します。
         </label>
       </div>
       <button class="form-submit" type="submit" data-fs-submit-btn>
@@ -297,48 +329,13 @@
   <address class="footer-address">
     〒530-0011　大阪府大阪市北区大深町5-54<br>
     グラングリーン大阪 南館 ゲートタワー7階<br>
-    TEL <a href="tel:0677886391" style="color:var(--ink-light); text-decoration:none;">06-7688-6391</a>　<a href="mailto:kota@yuki-tax.jp">kota@yuki-tax.jp</a>
+    TEL <a href="tel:0677886391">06-7688-6391</a>
   </address>
   <div class="footer-right">
-    <a href="#privacy">個人情報保護方針</a>
+    <a href="/privacy.html">個人情報保護方針</a>
     <span class="footer-copy">&#169; 2026 結城宏太税理士事務所</span>
   </div>
 </footer>
-
-<section id="privacy" class="privacy-section">
-  <div class="privacy-inner">
-    <h2 class="privacy-title">個人情報保護方針</h2>
-    <div class="privacy-body">
-      <p>結城宏太税理士事務所（以下「当事務所」）は、お問い合わせフォームを通じて取得する個人情報について、以下の方針に従い適切に取り扱います。</p>
-
-      <p class="privacy-heading">1. 取得する情報</p>
-      <p>氏名、会社名・屋号、メールアドレス、お問い合わせ内容。</p>
-
-      <p class="privacy-heading">2. 利用目的</p>
-      <p>お問い合わせへの回答および当事務所業務に関するご連絡のみに使用します。取得した個人情報を目的外に利用することはありません。</p>
-
-      <p class="privacy-heading">3. 外部サービスの利用（フォーム送信基盤）</p>
-      <p>当事務所はお問い合わせフォームの送信処理に Formspree, Inc.（米国）のサービスを利用しています。入力された情報は同社のシステムを経由して当事務所に送信されます。同社における個人情報の取扱いについては、同社のプライバシーポリシー（<a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">formspree.io</a>）をご確認ください。</p>
-
-      <p class="privacy-heading">4. 保存期間</p>
-      <p>取得した個人情報は、お問い合わせへの対応完了後、必要な期間を超えて保存しません。顧問契約に至った場合は、税理士法その他関係法令に基づく期間、適切に管理します。</p>
-
-      <p class="privacy-heading">5. 安全管理</p>
-      <p>取得した個人情報は、不正アクセス・紛失・漏洩等を防止するために適切な安全管理措置を講じます。</p>
-
-      <p class="privacy-heading">6. 第三者への提供</p>
-      <p>法令に基づく場合を除き、ご本人の同意なく第三者に提供することはありません。</p>
-
-      <p class="privacy-heading">7. 開示・訂正・削除</p>
-      <p>ご本人からの開示・訂正・削除のご要望には、本人確認のうえ合理的な期間内に対応します。下記メールアドレスまでご連絡ください。</p>
-
-      <p class="privacy-heading">8. お問い合わせ窓口</p>
-      <p>結城宏太税理士事務所　<a href="mailto:kota@yuki-tax.jp">kota@yuki-tax.jp</a></p>
-
-      <p class="privacy-date">制定：2026年4月</p>
-    </div>
-  </div>
-</section>
 
 <script>
   const ham = document.getElementById('hamburger');
