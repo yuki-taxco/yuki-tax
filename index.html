@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援</title>
 <meta name="description" content="大阪・グラングリーン大阪を拠点とする税理士事務所。税務顧問・相続・業務フロー整備まで、データを活かした経営支援を行います。">
-<!-- OGP -->
 <meta property="og:title" content="結城宏太税理士事務所 | 大阪・中小企業の税務・財務支援">
 <meta property="og:description" content="大阪・グラングリーン大阪を拠点とする税理士事務所。税務顧問・相続・業務フロー整備まで、データを活かした経営支援を行います。">
 <meta property="og:image" content="https://yuki-tax.jp/images/tower.jpg">
@@ -19,9 +18,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --ink: #111111; --ink-mid: #333333; --ink-light: #555555;
-  --ink-xlight: #888888; --paper: #ffffff; --paper-warm: #f6f3ec;
-  --paper-dark: #1a1a18; --rule: #cccccc; --rule-light: #e8e8e8;
-  --accent: #7a6040; --accent-light: #c8a96e;
+  --ink-xlight: #888888; --paper: #f8f9fb; --paper-warm: #f0f2f5;
+  --paper-dark: #262d3a; --rule: #c4c8d0; --rule-light: #e4e8ee;
+  --accent: #3a5a7a; --accent-light: #5b8aaa;
   --ff-serif: 'Noto Serif JP','Yu Mincho','游明朝',serif;
   --ff-sans: 'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;
 }
@@ -59,11 +58,19 @@ nav a:hover { color:var(--accent); }
 .btn-primary:hover { background:var(--accent); }
 .btn-secondary { background:transparent; color:var(--ink); border:1px solid var(--ink); padding:15px 36px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.2em; text-decoration:none; transition:all 0.3s; }
 .btn-secondary:hover { background:var(--ink); color:#fff; }
-.hero-right { display:grid; grid-template-columns:3fr 2fr; grid-template-rows:1fr 1fr; gap:3px; background:var(--rule-light); overflow:hidden; }
-.hero-photo { overflow:hidden; position:relative; }
-.hero-photo img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s ease; }
-.hero-photo:hover img { transform:scale(1.03); }
-.hero-photo.large { grid-row:1/3; }
+.hero-right { position:relative; overflow:hidden; background:#000; }
+.slideshow { width:100%; height:100%; position:relative; }
+.slide { position:absolute; inset:0; opacity:0; transition:opacity 0.7s ease; }
+.slide.active { opacity:1; }
+.slide img { width:100%; height:100%; object-fit:cover; display:block; }
+.slide-btn { position:absolute; top:50%; transform:translateY(-50%); z-index:10; background:rgba(255,255,255,0.15); border:none; cursor:pointer; width:40px; height:40px; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(4px); transition:background 0.2s; }
+.slide-btn:hover { background:rgba(255,255,255,0.3); }
+.slide-btn svg { width:16px; height:16px; stroke:#fff; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+.slide-prev { left:12px; }
+.slide-next { right:12px; }
+.slide-dots { position:absolute; bottom:12px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10; }
+.slide-dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.4); border:none; cursor:pointer; padding:0; transition:background 0.2s; }
+.slide-dot.active { background:#fff; }
 
 /* PHOTO STRIP */
 .photo-strip { display:grid; grid-template-columns:2fr 3fr 2fr; gap:3px; height:320px; background:var(--rule-light); }
@@ -91,12 +98,20 @@ section { padding:100px 48px; }
 .profile-label { width:88px; flex-shrink:0; color:var(--ink-xlight); font-size:12px; letter-spacing:0.1em; padding-top:2px; }
 .profile-value { font-size:15px; color:var(--ink-mid); line-height:1.9; }
 
+/* POLICY */
+#policy { background:var(--paper); border-top:1px solid var(--rule-light); }
+.policy-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--rule-light); }
+.policy-item { background:var(--paper-warm); padding:44px 36px; }
+.policy-num { font-size:32px; font-family:var(--ff-serif); font-weight:300; color:var(--accent-light); margin-bottom:20px; display:block; }
+.policy-title { font-family:var(--ff-serif); font-size:17px; font-weight:400; letter-spacing:0.08em; margin-bottom:16px; line-height:1.6; color:var(--ink); }
+.policy-desc { font-size:14px; color:var(--ink-light); line-height:2.2; }
+
 /* SERVICES */
 #services { border-top:1px solid var(--rule-light); }
 .services-intro { font-size:16px; color:var(--ink-mid); line-height:2.2; max-width:640px; margin-bottom:52px; }
 .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--rule-light); }
 .service-item { background:var(--paper); padding:40px 32px; position:relative; transition:background 0.25s; }
-.service-item:hover { background:#faf8f4; }
+.service-item:hover { background:#eef1f5; }
 .service-item::after { content:''; position:absolute; bottom:0; left:32px; right:32px; height:2px; background:transparent; transition:background 0.25s; }
 .service-item:hover::after { background:var(--accent-light); }
 .service-num { font-size:10px; letter-spacing:0.25em; color:var(--ink-xlight); margin-bottom:18px; display:block; }
@@ -104,24 +119,24 @@ section { padding:100px 48px; }
 .service-desc { font-size:14px; color:var(--ink-light); line-height:2.1; }
 .service-tag { display:inline-block; margin-top:14px; font-size:10px; letter-spacing:0.18em; color:var(--ink-xlight); border-bottom:1px solid var(--rule); padding-bottom:2px; }
 .service-item.highlight { background:var(--paper-warm); border-left:3px solid var(--accent); }
-.service-item.highlight:hover { background:#ede8de; }
+.service-item.highlight:hover { background:#e4eaf2; }
 .service-item.highlight .service-name { color:var(--accent); }
 .service-item.highlight .service-tag { color:var(--accent); border-color:var(--accent-light); }
 
 /* ACCESS */
-#access { background:var(--paper-dark); color:#e8e4da; border-top:none; }
-#access .section-title { color:#e8e4da; }
-#access .section-num { color:#555; }
+#access { background:var(--paper-dark); color:#dde3ed; border-top:none; }
+#access .section-title { color:#dde3ed; }
+#access .section-num { color:#6a7a8a; }
 .access-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
-.access-address { font-size:16px; line-height:2.2; color:#999; margin-bottom:36px; }
-.access-address strong { color:#e8e4da; display:block; margin-bottom:6px; font-weight:400; font-family:var(--ff-serif); font-size:19px; letter-spacing:0.1em; }
+.access-address { font-size:16px; line-height:2.2; color:#a8b4c4; margin-bottom:36px; }
+.access-address strong { color:#dde3ed; display:block; margin-bottom:6px; font-weight:400; font-family:var(--ff-serif); font-size:19px; letter-spacing:0.1em; }
 .access-routes { display:flex; flex-direction:column; }
-.access-route { display:flex; align-items:baseline; gap:16px; padding:16px 0; border-bottom:1px solid #2a2a28; }
-.access-route:first-child { border-top:1px solid #2a2a28; }
+.access-route { display:flex; align-items:baseline; gap:16px; padding:16px 0; border-bottom:1px solid #3a4458; }
+.access-route:first-child { border-top:1px solid #3a4458; }
 .route-line { font-size:11px; letter-spacing:0.15em; color:var(--accent-light); flex-shrink:0; width:72px; }
-.route-desc { font-size:14px; color:#888; line-height:1.9; }
-.route-note { font-size:12px; color:#555; margin-top:20px; line-height:1.8; }
-.access-map { overflow:hidden; border:1px solid #2a2a28; }
+.route-desc { font-size:14px; color:#a8b4c4; line-height:1.9; }
+.route-note { font-size:12px; color:#7a8a9a; margin-top:20px; line-height:1.8; }
+.access-map { overflow:hidden; border:1px solid #3a4458; }
 .access-map iframe { display:block; width:100%; height:380px; filter:grayscale(15%) brightness(0.9); }
 
 /* CONTACT */
@@ -151,14 +166,14 @@ section { padding:100px 48px; }
 /* FOOTER */
 footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-template-columns:1fr auto; gap:32px; align-items:end; border-top:3px solid var(--accent); }
 .footer-name { font-family:var(--ff-serif); font-size:16px; color:#ccc; letter-spacing:0.15em; margin-bottom:12px; font-weight:300; }
-.footer-address { font-size:12px; line-height:2.2; color:#555; letter-spacing:0.05em; font-style:normal; }
-.footer-address a { color:#666; text-decoration:none; }
-.footer-address a:hover { color:#999; }
+.footer-address { font-size:12px; line-height:2.2; color:#777; letter-spacing:0.05em; font-style:normal; }
+.footer-address a { color:#777; text-decoration:none; }
+.footer-address a:hover { color:#aaa; }
 .footer-right { display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
 .footer-links { display:flex; gap:20px; }
-.footer-links a { font-size:11px; color:#444; text-decoration:none; letter-spacing:0.1em; transition:color 0.2s; }
-.footer-links a:hover { color:#777; }
-.footer-copy { font-size:11px; color:#333; letter-spacing:0.1em; }
+.footer-links a { font-size:11px; color:#666; text-decoration:none; letter-spacing:0.1em; transition:color 0.2s; }
+.footer-links a:hover { color:#999; }
+.footer-copy { font-size:11px; color:#555; letter-spacing:0.1em; }
 
 /* ANIMATIONS */
 @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
@@ -182,7 +197,7 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
   .photo-strip { height:200px; grid-template-columns:1fr 1fr 1fr; }
   section { padding:72px 24px; }
   .about-grid,.access-grid,.contact-grid { grid-template-columns:1fr; gap:48px; }
-  .services-grid { grid-template-columns:1fr; }
+  .policy-grid,.services-grid { grid-template-columns:1fr; }
   footer { grid-template-columns:1fr; padding:40px 24px; }
   .footer-right { align-items:flex-start; }
   .contact-form { padding:32px 24px; }
@@ -234,14 +249,27 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-photo large">
-      <img src="images/lobby.jpg" alt="ゲートタワーオフィス ロビー">
-    </div>
-    <div class="hero-photo">
-      <img src="images/tower.jpg" alt="グラングリーン大阪 タワー外観">
-    </div>
-    <div class="hero-photo">
-      <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
+    <div class="slideshow" id="heroSlide">
+      <div class="slide active">
+        <img src="images/lobby.jpg" alt="ゲートタワーオフィス ロビー">
+      </div>
+      <div class="slide">
+        <img src="images/tower.jpg" alt="グラングリーン大阪 タワー外観">
+      </div>
+      <div class="slide">
+        <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
+      </div>
+      <button class="slide-btn slide-prev" aria-label="前の画像">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="slide-btn slide-next" aria-label="次の画像">
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      <div class="slide-dots">
+        <button class="slide-dot active" aria-label="1枚目"></button>
+        <button class="slide-dot" aria-label="2枚目"></button>
+        <button class="slide-dot" aria-label="3枚目"></button>
+      </div>
     </div>
   </div>
 </div>
@@ -281,7 +309,33 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
   </div>
 </section>
 
-<!-- 写真帯 -->
+<section id="policy">
+  <div class="section-header reveal">
+    <span class="section-num">—</span>
+    <div>
+      <h2 class="section-title">業務の基本方針</h2>
+      <p class="section-title-en">OUR POLICY</p>
+    </div>
+  </div>
+  <div class="policy-grid reveal">
+    <div class="policy-item">
+      <span class="policy-num">01</span>
+      <h3 class="policy-title">適正な税務の実現</h3>
+      <p class="policy-desc">税理士として独立・公正な立場から、納税義務の適正な実現を図ります。「1円も多く支払わせない、1円も少なく支払わせない」——それが専門家としての責務です。</p>
+    </div>
+    <div class="policy-item">
+      <span class="policy-num">02</span>
+      <h3 class="policy-title">丁寧な説明と意思決定のサポート</h3>
+      <p class="policy-desc">前提条件が変われば答えも変わります。あらゆる条件を想定したシミュレーションと丁寧な説明により、お客様自身が理解・納得して判断を下せるようサポートします。</p>
+    </div>
+    <div class="policy-item">
+      <span class="policy-num">03</span>
+      <h3 class="policy-title">リスク分析による完全防衛</h3>
+      <p class="policy-desc">企業や個人を取り巻くリスクはあらゆるところに存在します。徹底したリスク分析によってお客様のリスクを可能な限り軽減し、事前の対策で被害を最小限に抑えます。</p>
+    </div>
+  </div>
+</section>
+
 <div class="photo-strip reveal">
   <div class="strip-photo">
     <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
@@ -305,18 +359,18 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
       <p class="section-title-en">SERVICES</p>
     </div>
   </div>
-  <p class="services-intro reveal">中小企業の経営者が直面する税務・財務上の課題に幅広く対応します。。</p>
+  <p class="services-intro reveal">中小企業の経営者が直面する税務・財務上の課題に幅広く対応します。各業務の詳細ページは順次公開予定です。</p>
   <div class="services-grid reveal">
     <div class="service-item">
       <span class="service-num">01</span>
-      <h3 class="service-name">税務申告・<br>税務顧問</h3>
-      <p class="service-desc">法人税・所得税・消費税の申告。月次試算表から決算まで、経営判断を支える数字を整えます。</p>
+      <h3 class="service-name">法人・個人事業<br>顧問</h3>
+      <p class="service-desc">月次の会計帳簿の適正性確認と財務状況のチェック。税務届出・税務申告・税務調査対応に加え、バックオフィス業務のデジタル化支援も行います。</p>
       <span class="service-tag">詳細ページ準備中</span>
     </div>
     <div class="service-item">
       <span class="service-num">02</span>
-      <h3 class="service-name">相続・<br>事業承継</h3>
-      <p class="service-desc">相続税申告・節税対策・納税資金の確保。後継者への円滑な事業承継スキームを構築します。</p>
+      <h3 class="service-name">資産税対策・<br>相続税申告</h3>
+      <p class="service-desc">相続対策から発生後の申告まで一貫して対応。法人の場合は自社株・事業用資産の問題も扱います。ヒアリング・資料収集・分析を経て、相続シミュレーションを実施します。</p>
       <span class="service-tag">詳細ページ準備中</span>
     </div>
     <div class="service-item">
@@ -340,7 +394,7 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
     <div class="service-item">
       <span class="service-num">06</span>
       <h3 class="service-name">税務調査・<br>各種対応</h3>
-      <p class="service-desc">税務調査対応・各種届出書類の作成。専門家として的確にサポートします。</p>
+      <p class="service-desc">税務調査対応・不服申立て・各種届出書類の作成。専門家として的確にサポートします。</p>
       <span class="service-tag">詳細ページ準備中</span>
     </div>
   </div>
@@ -351,7 +405,7 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
     <span class="section-num">03</span>
     <div>
       <h2 class="section-title">アクセス</h2>
-      <p class="section-title-en" style="color:#444;">ACCESS</p>
+      <p class="section-title-en" style="color:var(--accent-light);">ACCESS</p>
     </div>
   </div>
   <div class="access-grid reveal">
@@ -361,7 +415,7 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
         〒530-0011<br>
         大阪府大阪市北区大深町5-54<br>
         グラングリーン大阪 南館 ゲートタワー7階<br><br>
-        TEL：<a href="tel:0677886391" style="color:#888;text-decoration:none;">06-7688-6391</a>
+        TEL：<a href="tel:0677886391" style="color:#a8b4c4;text-decoration:none;">06-7688-6391</a>
       </div>
       <div class="access-routes">
         <div class="access-route">
@@ -378,7 +432,7 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
         </div>
         <div class="access-route">
           <span class="route-line">阪神</span>
-          <span class="route-desc">「大阪梅田駅」西口より<br>徒歩約8分（要精査）</span>
+          <span class="route-desc">「大阪梅田駅」西口より<br>徒歩約8分</span>
         </div>
       </div>
       <p class="route-note">※ 所要時間は目安です。ご来所の際はご連絡ください。</p>
@@ -478,6 +532,24 @@ footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-tem
   reveals.forEach(el => io.observe(el));
   window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
   formspree('initForm', { formElement: '#contactForm', formId: 'maqlllje' });
+
+  // slideshow
+  const slides = document.querySelectorAll('#heroSlide .slide');
+  const dots = document.querySelectorAll('#heroSlide .slide-dot');
+  let current = 0, timer;
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+  document.querySelector('.slide-prev').addEventListener('click', () => goTo(current - 1));
+  document.querySelector('.slide-next').addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+  timer = setInterval(() => goTo(current + 1), 5000);
 </script>
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
