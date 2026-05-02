@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yuki-tax.jp/sitemap.xml

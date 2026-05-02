@@ -3,35 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ▼ S級修正①: タイトル・メタ説明に「兵庫」追加、登録番号・無料相談を含める -->
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#242b38">
 <title>結城宏太税理士事務所 | 大阪・兵庫の税務顧問・相続・創業支援</title>
-<meta name="description" content="大阪・梅田（グラングリーン大阪）を拠点に大阪府・兵庫県の中小企業・個人事業主を支援。税務顧問・相続税申告・会計フロー構築まで対応。初回30分無料相談。税理士登録番号139208。近畿税理士会大淀支部所属。">
-<meta name="robots" content="index, follow">
-
-<!-- ▼ S級修正②: canonical -->
+<meta name="description" content="大阪・梅田（グラングリーン大阪）を拠点に、大阪府・兵庫県の中小企業・個人事業主・相続のご相談を支援。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備に対応。初回30分無料相談。">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="結城宏太税理士事務所">
 <link rel="canonical" href="https://yuki-tax.jp/">
-
-<!-- ▼ S級修正③: favicon（favicon.ico / icon.svg / apple-touch-icon.png を /images/ に用意してください） -->
-<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-
-<!-- OGP -->
+<link rel="manifest" href="/site.webmanifest">
 <meta property="og:title" content="結城宏太税理士事務所 | 大阪・兵庫の税務顧問・相続・創業支援">
-<meta property="og:description" content="大阪・梅田を拠点に大阪府・兵庫県の中小企業・個人事業主を支援。税務顧問・相続税申告・会計フロー構築まで対応。初回30分無料相談。">
-<meta property="og:image" content="https://yuki-tax.jp/images/tower.jpg">
-<meta property="og:url" content="https://yuki-tax.jp">
+<meta property="og:description" content="大阪・梅田（グラングリーン大阪）を拠点に、大阪府・兵庫県の中小企業・個人事業主・相続のご相談を支援。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備に対応。初回30分無料相談。">
+<meta property="og:image" content="https://yuki-tax.jp/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="結城宏太税理士事務所">
+<meta property="og:url" content="https://yuki-tax.jp/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="結城宏太税理士事務所">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="結城宏太税理士事務所 | 大阪・兵庫の税務顧問・相続・創業支援">
-<meta name="twitter:description" content="大阪・梅田を拠点に大阪府・兵庫県の中小企業・個人事業主を支援。初回30分無料相談。">
-<meta name="twitter:image" content="https://yuki-tax.jp/images/tower.jpg">
-
-<!-- ▼ S級修正④: Google Analytics 4
-     ※ Googleアナリティクスで取得した「測定ID（G-8JLDZXYHXQ）」に置き換えてください -->
+<meta name="twitter:description" content="大阪・梅田（グラングリーン大阪）を拠点に、大阪府・兵庫県の中小企業・個人事業主・相続のご相談を支援。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備に対応。初回30分無料相談。">
+<meta name="twitter:image" content="https://yuki-tax.jp/images/ogp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://maps.google.com">
+<link rel="dns-prefetch" href="https://formspree.io">
+<link rel="preload" as="image" href="/images/lobby.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JLDZXYHXQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -39,41 +42,57 @@
   gtag('js', new Date());
   gtag('config', 'G-8JLDZXYHXQ');
 </script>
-
-<!-- ▼ S級修正⑤: 構造化データ（LocalBusiness / AccountingService） -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AccountingService",
+  "@type": [
+    "AccountingService",
+    "LocalBusiness"
+  ],
+  "@id": "https://yuki-tax.jp/#organization",
   "name": "結城宏太税理士事務所",
-  "alternateName": "Yuki Kota Tax Accountant Office",
-  "description": "大阪・兵庫の中小企業・個人事業主を支援する税理士事務所。税務顧問・相続税申告・会計フロー構築・業務フロー整備に対応。",
-  "url": "https://yuki-tax.jp",
-  "telephone": "06-7688-6391",
+  "alternateName": "YUKI KOTA TAX ACCOUNTANT OFFICE",
+  "description": "大阪・梅田を拠点に、大阪府・兵庫県の中小企業、個人事業主、相続の相談に対応する税理士事務所です。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備を支援します。",
+  "url": "https://yuki-tax.jp/",
+  "telephone": "+81676886391",
+  "email": "info@yuki-tax.jp",
+  "image": "https://yuki-tax.jp/images/ogp.jpg",
   "priceRange": "¥¥",
   "currenciesAccepted": "JPY",
   "paymentAccepted": "銀行振込",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階",
-    "addressLocality": "大阪市",
-    "addressRegion": "大阪府",
     "postalCode": "530-0011",
+    "addressRegion": "大阪府",
+    "addressLocality": "大阪市北区",
+    "streetAddress": "大深町5-54 グラングリーン大阪 南館 ゲートタワー7階",
     "addressCountry": "JP"
   },
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 34.7024,
-    "longitude": 135.4970
+    "longitude": 135.497
   },
   "areaServed": [
-    {"@type": "State", "name": "大阪府"},
-    {"@type": "State", "name": "兵庫県"}
+    {
+      "@type": "AdministrativeArea",
+      "name": "大阪府"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "兵庫県"
+    }
   ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
       "opens": "09:00",
       "closes": "18:00"
     }
@@ -82,699 +101,403 @@
     "@type": "Person",
     "name": "結城 宏太",
     "jobTitle": "税理士",
-    "taxID": "139208",
+    "identifier": "税理士登録番号 139208",
     "memberOf": {
       "@type": "Organization",
       "name": "近畿税理士会 大淀支部"
     }
   },
   "foundingDate": "2026-04-01",
-  "sameAs": ["https://yuki-tax.jp"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "税務・会計サービス一覧",
+    "name": "税務・会計サービス",
     "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "法人・個人事業 税務顧問"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "相続税申告・資産税対策"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "会計環境の構築・支援"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "業務フロー整備支援"}}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "法人・個人事業主の税務顧問",
+          "url": "https://yuki-tax.jp/tax-advisory.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "相続税申告・相続対策",
+          "url": "https://yuki-tax.jp/inheritance.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "創業支援・会社設立後の税務",
+          "url": "https://yuki-tax.jp/startup.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "会計環境構築・業務フロー整備",
+          "url": "https://yuki-tax.jp/accounting-dx.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "税務調査・各種対応",
+          "url": "https://yuki-tax.jp/tax-investigation.html"
+        }
+      }
     ]
   }
 }
 </script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --ink: #111111; --ink-mid: #333333; --ink-light: #555555;
-  --ink-xlight: #888888; --paper: #f8f9fb; --paper-warm: #f0f2f5;
-  --paper-dark: #262d3a; --rule: #c4c8d0; --rule-light: #e4e8ee;
-  --accent: #3a5a7a; --accent-light: #5b8aaa;
-  --ff-serif: 'Noto Serif JP','Yu Mincho','游明朝',serif;
-  --ff-sans: 'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://yuki-tax.jp/"
+    }
+  ]
 }
-html { scroll-behavior: smooth; }
-body { background:var(--paper); color:var(--ink); font-family:var(--ff-sans); font-weight:300; line-height:1.8; -webkit-font-smoothing:antialiased; font-size:16px; }
-
-/* HEADER */
-header { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,0.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--rule); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:68px; }
-.logo-wrap { text-decoration:none; display:flex; flex-direction:column; gap:2px; }
-.logo-main { font-family:var(--ff-serif); font-weight:400; font-size:15px; letter-spacing:0.15em; color:var(--ink); }
-.logo-sub { font-size:10px; letter-spacing:0.18em; color:var(--ink-xlight); }
-nav { display:flex; gap:32px; align-items:center; }
-nav a { font-size:13px; letter-spacing:0.08em; color:var(--ink-mid); text-decoration:none; transition:color 0.2s; font-weight:400; }
-nav a:hover { color:var(--accent); }
-.nav-cta { background:var(--ink); color:#fff !important; padding:10px 22px; letter-spacing:0.15em !important; transition:background 0.2s !important; }
-.nav-cta:hover { background:var(--accent) !important; }
-.hamburger { display:none; flex-direction:column; gap:6px; background:none; border:none; cursor:pointer; padding:4px; }
-.hamburger span { display:block; width:24px; height:1.5px; background:var(--ink); transition:transform 0.3s,opacity 0.3s; }
-.hamburger.open span:nth-child(1) { transform:translateY(7.5px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity:0; }
-.hamburger.open span:nth-child(3) { transform:translateY(-7.5px) rotate(-45deg); }
-.mobile-nav { display:none; position:fixed; top:68px; left:0; right:0; background:#fff; border-bottom:2px solid var(--ink); z-index:99; flex-direction:column; }
-.mobile-nav.open { display:flex; }
-.mobile-nav a { padding:18px 24px; font-size:15px; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--rule-light); }
-/* ▼ A級修正: モバイルナビのCTAスタイル */
-.mobile-nav a.mobile-cta { background:var(--ink); color:#fff; font-weight:400; border-bottom:none; text-align:center; letter-spacing:0.15em; }
-
-/* HERO */
-.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; padding-top:68px; }
-.hero-left { display:flex; flex-direction:column; justify-content:center; padding:80px 56px 80px 48px; }
-.hero-badge { display:inline-block; font-size:11px; letter-spacing:0.25em; color:var(--accent); border:1px solid var(--accent); padding:6px 14px; margin-bottom:32px; }
-.hero-title { font-family:var(--ff-serif); font-size:clamp(30px,3.8vw,50px); font-weight:400; letter-spacing:0.12em; line-height:1.5; margin-bottom:6px; }
-.hero-title-en { font-size:11px; letter-spacing:0.28em; color:var(--ink-xlight); margin-bottom:44px; }
-.hero-lead { font-size:17px; line-height:2.3; color:var(--ink-mid); margin-bottom:52px; border-left:3px solid var(--accent); padding-left:20px; max-width:380px; }
-.hero-actions { display:flex; gap:16px; flex-wrap:wrap; }
-.btn-primary { background:var(--ink); color:#fff; padding:16px 36px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.2em; text-decoration:none; transition:background 0.3s; }
-.btn-primary:hover { background:var(--accent); }
-.btn-secondary { background:transparent; color:var(--ink); border:1px solid var(--ink); padding:15px 36px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.2em; text-decoration:none; transition:all 0.3s; }
-.btn-secondary:hover { background:var(--ink); color:#fff; }
-.hero-right { position:relative; overflow:hidden; background:#000; }
-.slideshow { width:100%; height:100%; position:relative; }
-.slide { position:absolute; inset:0; opacity:0; transition:opacity 0.7s ease; }
-.slide.active { opacity:1; }
-.slide img { width:100%; height:100%; object-fit:cover; display:block; }
-.slide-btn { position:absolute; top:50%; transform:translateY(-50%); z-index:10; background:rgba(255,255,255,0.15); border:none; cursor:pointer; width:40px; height:40px; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(4px); transition:background 0.2s; }
-.slide-btn:hover { background:rgba(255,255,255,0.3); }
-.slide-btn svg { width:16px; height:16px; stroke:#fff; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
-.slide-prev { left:12px; }
-.slide-next { right:12px; }
-.slide-dots { position:absolute; bottom:12px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10; }
-.slide-dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.4); border:none; cursor:pointer; padding:0; transition:background 0.2s; }
-.slide-dot.active { background:#fff; }
-
-/* PHOTO STRIP */
-.photo-strip { display:grid; grid-template-columns:2fr 3fr 2fr; gap:3px; height:320px; background:var(--rule-light); }
-.strip-photo { overflow:hidden; position:relative; }
-.strip-photo img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s ease; }
-.strip-photo:hover img { transform:scale(1.04); }
-/* ▼ B級修正: キャプションを常時表示（スマホでhoverできないため） */
-.strip-caption { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.55)); color:#fff; font-size:11px; letter-spacing:0.15em; padding:20px 16px 12px; }
-
-/* SECTION */
-section { padding:100px 48px; }
-.section-header { display:flex; align-items:baseline; gap:20px; margin-bottom:56px; }
-.section-num { font-size:11px; letter-spacing:0.25em; color:var(--ink-xlight); flex-shrink:0; }
-.section-title { font-family:var(--ff-serif); font-size:26px; font-weight:400; letter-spacing:0.15em; }
-.section-title-en { font-size:11px; letter-spacing:0.3em; color:var(--ink-xlight); margin-top:4px; }
-
-/* ABOUT */
-#about { background:var(--paper-warm); border-top:1px solid var(--rule-light); }
-.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
-.about-text { font-size:16px; color:var(--ink-mid); line-height:2.3; }
-.about-text p+p { margin-top:1.8em; }
-.about-profile-wrap { display:flex; flex-direction:column; gap:28px; }
-/* ▼ S級修正⑥: プロフィール写真エリア */
-.profile-photo-area { width:100%; aspect-ratio:4/3; max-height:260px; background:var(--paper); border:1px solid var(--rule); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; overflow:hidden; }
-.profile-photo-area img { width:100%; height:100%; object-fit:cover; display:block; }
-.photo-placeholder { display:flex; flex-direction:column; align-items:center; gap:8px; }
-.photo-placeholder-icon { width:64px; height:64px; border-radius:50%; background:var(--paper-warm); border:1px solid var(--rule); display:flex; align-items:center; justify-content:center; }
-.photo-placeholder-icon svg { width:32px; height:32px; stroke:var(--ink-xlight); stroke-width:1; fill:none; }
-.photo-placeholder-text { font-size:11px; letter-spacing:0.15em; color:var(--ink-xlight); }
-.about-profile { background:var(--paper); border:1px solid var(--rule); padding:32px; }
-.profile-row { display:flex; padding:14px 0; border-bottom:1px solid var(--rule-light); }
-.profile-row:last-child { border-bottom:none; }
-.profile-label { width:88px; flex-shrink:0; color:var(--ink-xlight); font-size:12px; letter-spacing:0.1em; padding-top:2px; }
-.profile-value { font-size:15px; color:var(--ink-mid); line-height:1.9; }
-
-/* POLICY */
-#policy { background:var(--paper); border-top:1px solid var(--rule-light); }
-.policy-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--rule-light); }
-.policy-item { background:var(--paper-warm); padding:44px 36px; }
-.policy-num { font-size:32px; font-family:var(--ff-serif); font-weight:300; color:var(--accent-light); margin-bottom:20px; display:block; }
-.policy-title { font-family:var(--ff-serif); font-size:17px; font-weight:400; letter-spacing:0.08em; margin-bottom:16px; line-height:1.6; color:var(--ink); }
-.policy-desc { font-size:14px; color:var(--ink-light); line-height:2.2; }
-
-/* SERVICES */
-#services { border-top:1px solid var(--rule-light); }
-.services-intro { font-size:16px; color:var(--ink-mid); line-height:2.2; max-width:640px; margin-bottom:52px; }
-.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--rule-light); }
-.service-item { background:var(--paper); padding:40px 32px; position:relative; transition:background 0.25s; }
-.service-item:hover { background:#eef1f5; }
-.service-item::after { content:''; position:absolute; bottom:0; left:32px; right:32px; height:2px; background:transparent; transition:background 0.25s; }
-.service-item:hover::after { background:var(--accent-light); }
-.service-num { font-size:10px; letter-spacing:0.25em; color:var(--ink-xlight); margin-bottom:18px; display:block; }
-.service-name { font-family:var(--ff-serif); font-size:18px; font-weight:400; letter-spacing:0.08em; margin-bottom:14px; line-height:1.6; color:var(--ink); }
-.service-desc { font-size:14px; color:var(--ink-light); line-height:2.1; }
-/* ▼ S級修正⑦: 料金表示タグ（「詳細ページ準備中」を廃止） */
-.service-price { display:inline-block; margin-top:16px; font-size:12px; letter-spacing:0.08em; color:var(--accent); background:rgba(58,90,122,0.06); border:1px solid rgba(58,90,122,0.2); padding:4px 10px; }
-.service-item.highlight { background:var(--paper-warm); border-left:3px solid var(--accent); }
-.service-item.highlight:hover { background:#e4eaf2; }
-.service-item.highlight .service-name { color:var(--accent); }
-.service-item.highlight .service-price { color:var(--accent); }
-
-/* ACCESS */
-#access { background:var(--paper-dark); color:#dde3ed; border-top:none; }
-#access .section-title { color:#dde3ed; }
-#access .section-num { color:#6a7a8a; }
-.access-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
-.access-address { font-size:16px; line-height:2.2; color:#a8b4c4; margin-bottom:36px; }
-.access-address strong { color:#dde3ed; display:block; margin-bottom:6px; font-weight:400; font-family:var(--ff-serif); font-size:19px; letter-spacing:0.1em; }
-.access-routes { display:flex; flex-direction:column; }
-.access-route { display:flex; align-items:baseline; gap:16px; padding:16px 0; border-bottom:1px solid #3a4458; }
-.access-route:first-child { border-top:1px solid #3a4458; }
-.route-line { font-size:11px; letter-spacing:0.15em; color:var(--accent-light); flex-shrink:0; width:72px; }
-.route-desc { font-size:14px; color:#a8b4c4; line-height:1.9; }
-.route-note { font-size:12px; color:#7a8a9a; margin-top:20px; line-height:1.8; }
-.access-map { overflow:hidden; border:1px solid #3a4458; }
-.access-map iframe { display:block; width:100%; height:380px; filter:grayscale(15%) brightness(0.9); }
-
-/* FAQ */
-#faq { background:var(--paper); border-top:1px solid var(--rule-light); }
-.faq-list { max-width:800px; }
-.faq-item { border-bottom:1px solid var(--rule-light); }
-.faq-item:first-child { border-top:1px solid var(--rule-light); }
-.faq-q { display:flex; align-items:center; justify-content:space-between; padding:22px 0; cursor:pointer; gap:16px; list-style:none; }
-.faq-q::-webkit-details-marker { display:none; }
-.faq-q-text { font-size:15px; color:var(--ink); font-weight:400; line-height:1.7; }
-.faq-q-prefix { font-size:11px; letter-spacing:0.2em; color:var(--accent); flex-shrink:0; font-weight:400; margin-right:4px; }
-.faq-q-icon { width:20px; height:20px; flex-shrink:0; position:relative; }
-.faq-q-icon::before { content:''; position:absolute; width:12px; height:1.5px; background:var(--ink-light); top:50%; left:50%; transform:translate(-50%,-50%); border-radius:1px; }
-.faq-q-icon::after { content:''; position:absolute; width:1.5px; height:12px; background:var(--ink-light); top:50%; left:50%; transform:translate(-50%,-50%); border-radius:1px; transition:transform 0.3s, opacity 0.3s; }
-details[open] .faq-q-icon::after { transform:translate(-50%,-50%) rotate(90deg); opacity:0; }
-.faq-a { font-size:14px; color:var(--ink-mid); line-height:2.3; padding:0 0 22px 0; padding-left:24px; border-left:2px solid var(--rule); margin-left:2px; }
-
-/* CONTACT */
-#contact { background:var(--paper-warm); border-top:1px solid var(--rule-light); }
-.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
-.contact-lead { font-size:17px; color:var(--ink-mid); line-height:2.2; margin-bottom:16px; }
-.contact-conditions { font-size:14px; color:var(--ink-light); line-height:2.1; border-left:2px solid var(--rule); padding-left:16px; margin-bottom:40px; }
-.contact-direct { margin-top:32px; padding-top:32px; border-top:1px solid var(--rule); }
-.contact-direct-label { font-size:11px; letter-spacing:0.2em; color:var(--ink-xlight); margin-bottom:12px; }
-.contact-direct-tel { font-size:18px; color:var(--ink); text-decoration:none; display:block; font-weight:400; }
-.contact-direct-tel:hover { color:var(--accent); }
-.contact-form { background:var(--paper); border:1px solid var(--rule); padding:48px 40px; }
-.form-row { margin-bottom:28px; }
-.form-label { display:block; font-size:12px; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:8px; }
-.form-label span { color:#b04040; margin-left:4px; font-size:10px; }
-.form-input,.form-textarea { width:100%; background:var(--paper-warm); border:1px solid var(--rule); padding:12px 16px; font-family:var(--ff-sans); font-size:15px; font-weight:300; color:var(--ink); outline:none; transition:border-color 0.2s; -webkit-appearance:none; border-radius:0; }
-.form-input:focus,.form-textarea:focus { border-color:var(--accent); background:var(--paper); }
-.form-textarea { resize:none; height:140px; line-height:1.8; }
-.consent-row { display:flex; align-items:flex-start; gap:10px; margin-bottom:28px; }
-.consent-row input[type="checkbox"] { margin-top:3px; flex-shrink:0; accent-color:var(--accent); width:16px; height:16px; cursor:pointer; }
-.consent-label { font-size:13px; color:var(--ink-mid); line-height:1.9; }
-.consent-label a { color:var(--accent); text-decoration:none; }
-.form-submit { width:100%; background:var(--ink); color:#fff; border:none; padding:18px; font-family:var(--ff-sans); font-size:14px; font-weight:400; letter-spacing:0.25em; cursor:pointer; transition:background 0.3s; }
-.form-submit:hover { background:var(--accent); }
-.form-submit:disabled { opacity:0.4; cursor:not-allowed; }
-
-/* FOOTER */
-footer { background:var(--ink); color:#666; padding:48px; display:grid; grid-template-columns:1fr auto; gap:32px; align-items:end; border-top:3px solid var(--accent); }
-.footer-name { font-family:var(--ff-serif); font-size:16px; color:#ccc; letter-spacing:0.15em; margin-bottom:12px; font-weight:300; }
-.footer-address { font-size:12px; line-height:2.2; color:#777; letter-spacing:0.05em; font-style:normal; }
-.footer-address a { color:#777; text-decoration:none; }
-.footer-address a:hover { color:#aaa; }
-.footer-right { display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
-.footer-links { display:flex; gap:20px; flex-wrap:wrap; justify-content:flex-end; }
-.footer-links a { font-size:11px; color:#666; text-decoration:none; letter-spacing:0.1em; transition:color 0.2s; }
-.footer-links a:hover { color:#999; }
-.footer-copy { font-size:11px; color:#555; letter-spacing:0.1em; }
-
-/* ANIMATIONS */
-@keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-.hero-left > * { opacity:0; animation:fadeInUp 0.8s ease forwards; }
-.hero-badge { animation-delay:0.1s; }
-.hero-title { animation-delay:0.2s; }
-.hero-title-en { animation-delay:0.3s; }
-.hero-lead { animation-delay:0.4s; }
-.hero-actions { animation-delay:0.5s; }
-.reveal { opacity:0; transform:translateY(16px); transition:opacity 0.7s ease,transform 0.7s ease; }
-.reveal.visible { opacity:1; transform:translateY(0); }
-
-/* MOBILE */
-@media (max-width:900px) {
-  header { padding:0 20px; }
-  nav { display:none; }
-  .hamburger { display:flex; }
-  .hero { grid-template-columns:1fr; min-height:auto; }
-  .hero-left { padding:48px 24px; }
-  .hero-right { height:260px; }
-  .photo-strip { height:200px; grid-template-columns:1fr 1fr 1fr; }
-  section { padding:72px 24px; }
-  .about-grid,.access-grid,.contact-grid { grid-template-columns:1fr; gap:48px; }
-  .policy-grid,.services-grid { grid-template-columns:1fr; }
-  footer { grid-template-columns:1fr; padding:40px 24px; }
-  .footer-right { align-items:flex-start; }
-  .contact-form { padding:32px 24px; }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://yuki-tax.jp/#website",
+  "url": "https://yuki-tax.jp/",
+  "name": "結城宏太税理士事務所",
+  "publisher": {
+    "@id": "https://yuki-tax.jp/#organization"
+  },
+  "inLanguage": "ja"
 }
-@media (max-width:600px) {
-  .hero-actions { flex-direction:column; }
-  .form-input,.form-textarea { font-size:16px; }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "顧問料はどのくらいかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "法人顧問は月額35,000円〜、個人事業主は月額20,000円〜を目安としています。年商、取引量、記帳の有無、面談頻度、決算申告の範囲により変動しますので、初回相談後に見積書で明示します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "現在の税理士から変更できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "対応可能です。決算期末での切り替えが最もスムーズですが、年度途中からの切り替えも状況により可能です。前任事務所との引き継ぎ資料や会計データの確認も含めて進めます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会計ソフトは指定がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "特定のソフトに限定していません。既に利用中のソフトがある場合は、まず現状を確認します。新規導入の場合は、業務フロー、利用人数、請求・給与との連携、費用対効果を踏まえて提案します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "大阪・兵庫以外の事業者でも相談できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "オンライン面談により全国から相談可能です。訪問対応が必要な場合は、大阪府・兵庫県を中心に対応します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "相続の相談はいつ頃すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "生前対策であれば早い段階ほど選択肢が広がります。相続発生後は申告期限があるため、財産の概要が分かった段階で早めにご相談ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "初回相談では何を準備すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "特別な書類がなくても相談可能です。法人・個人事業主の場合は直近の決算書、試算表、申告書、会計ソフトの状況が分かる資料があれば、より具体的にお話しできます。相続の場合は財産の種類と概算が分かる資料があれば参考になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "フォームに資料や個人番号を送ってもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "お問い合わせフォームでは、マイナンバー、本人確認書類、通帳画像などの機微情報は送信しないでください。必要資料は、相談内容を確認した後、安全な方法を個別にご案内します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "守秘義務は守られますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "税理士法第38条により、税理士には法定の守秘義務が課されています。お預かりした情報は厳重に管理し、業務上必要な範囲を超えて利用・開示することはありません。"
+      }
+    }
+  ]
 }
-</style>
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header>
-  <a href="#top" class="logo-wrap">
+<a href="#main" class="skip-link">本文へスキップ</a>
+<header class="site-header" role="banner">
+  <a href="index.html#top" class="logo-wrap" aria-label="結城宏太税理士事務所 ホームへ">
     <span class="logo-main">結城宏太税理士事務所</span>
     <span class="logo-sub">YUKI KOTA TAX ACCOUNTANT OFFICE</span>
   </a>
-  <nav>
-    <a href="#about">事務所について</a>
-    <a href="#services">業務内容</a>
-    <a href="#faq">よくある質問</a>
-    <a href="#access">アクセス</a>
-    <a href="#contact" class="nav-cta">お問い合わせ</a>
+  <nav class="global-nav" aria-label="グローバルナビゲーション">
+    <a href="index.html#about">事務所について</a>
+    <a href="services.html">業務内容</a>
+    <a href="fees.html">料金</a>
+    <a href="index.html#faq">よくある質問</a>
+    <a href="index.html#access">アクセス</a>
+    <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
   </nav>
-  <button class="hamburger" id="hamburger" aria-label="メニュー">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
 </header>
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <a href="index.html#about" data-mclose>事務所について</a>
+  <a href="services.html" data-mclose>業務内容</a>
+  <a href="fees.html" data-mclose>料金</a>
+  <a href="index.html#faq" data-mclose>よくある質問</a>
+  <a href="index.html#access" data-mclose>アクセス</a>
+  <a href="index.html#contact" data-mclose class="mobile-cta">お問い合わせ（初回30分無料）</a>
+</nav>
+<main id="main">
+  <section class="hero" id="top" aria-label="結城宏太税理士事務所の概要">
+    <div class="hero-left">
+      <span class="hero-badge">大阪・兵庫対応 / 税務顧問・相続・創業支援</span>
+      <h1 class="hero-title">制度と数字をつないで、<br>経営判断を支える。</h1>
+      <p class="hero-kicker">結城宏太税理士事務所</p>
+      <p class="hero-sub">税務申告だけでなく、会計データの整備、資金繰り、社会保険料・補助金との関係、相続・事業承継まで、判断に必要な前提を整理して説明します。</p>
+      <div class="hero-actions"><a href="#contact" class="btn-primary">無料相談を申し込む</a><a href="services.html" class="btn-secondary">業務内容・料金を見る</a></div>
+    </div>
+    <div class="hero-right">
+      <div class="slideshow" id="heroSlide" aria-roledescription="carousel" aria-label="事務所周辺の写真">
+        <div class="slide active" role="group" aria-label="1 / 3"><img src="images/lobby.jpg" alt="ゲートタワーオフィスのロビー" width="1200" height="800" fetchpriority="high"></div>
+        <div class="slide" role="group" aria-label="2 / 3"><img src="images/tower.jpg" alt="グラングリーン大阪 南館 ゲートタワーの外観" width="1200" height="800" loading="lazy"></div>
+        <div class="slide" role="group" aria-label="3 / 3"><img src="images/exterior1.jpg" alt="グラングリーン大阪の外観" width="1200" height="800" loading="lazy"></div>
+        <button class="slide-btn slide-prev" type="button" aria-label="前の画像"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+        <button class="slide-btn slide-next" type="button" aria-label="次の画像"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <button class="slide-pause" type="button" aria-label="自動再生を一時停止" id="slidePause"><span aria-hidden="true">Ⅱ</span></button>
+        <div class="slide-dots" role="tablist" aria-label="スライド選択"><button class="slide-dot active" type="button" aria-label="1枚目を表示" aria-selected="true"></button><button class="slide-dot" type="button" aria-label="2枚目を表示" aria-selected="false"></button><button class="slide-dot" type="button" aria-label="3枚目を表示" aria-selected="false"></button></div>
+      </div>
+    </div>
+  </section>
 
-<!-- ▼ A級修正: モバイルナビにCTAスタイルを追加 -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="#about" onclick="closeMenu()">事務所について</a>
-  <a href="#services" onclick="closeMenu()">業務内容</a>
-  <a href="#faq" onclick="closeMenu()">よくある質問</a>
-  <a href="#access" onclick="closeMenu()">アクセス</a>
-  <a href="#contact" onclick="closeMenu()" class="mobile-cta">お問い合わせ（初回無料）</a>
+  <section class="photo-strip" aria-label="事務所周辺の写真">
+    <div class="strip-photo"><img src="images/lobby.jpg" alt="グラングリーン大阪のロビー" width="900" height="600" loading="lazy"><span class="strip-caption">GRAND GREEN OSAKA</span></div>
+    <div class="strip-photo"><img src="images/tower.jpg" alt="グラングリーン大阪 南館 ゲートタワー" width="900" height="600" loading="lazy"><span class="strip-caption">GATE TOWER</span></div>
+    <div class="strip-photo"><img src="images/exterior1.jpg" alt="グラングリーン大阪の外観" width="900" height="600" loading="lazy"><span class="strip-caption">UMEDA / OSAKA</span></div>
+  </section>
+
+  <section id="needs" class="section-light">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">01</span><div><h2 class="section-title">このようなご相談に対応します</h2><p class="section-title-en">NEEDS</p></div></div>
+      <div class="needs-grid reveal">
+        <div class="need-item"><strong>顧問税理士を変更したい</strong><p>説明が少ない、対応が遅い、数字を経営判断に使えていない場合に、会計データと運用を見直します。</p></div>
+        <div class="need-item"><strong>創業・法人化後の税務を整えたい</strong><p>届出、役員報酬、消費税、インボイス、資金繰りなど、初期段階で決めるべき事項を整理します。</p></div>
+        <div class="need-item"><strong>相続税・事業承継を早めに確認したい</strong><p>財産構成、自社株、贈与、納税資金など、複数の選択肢を比較できる形にします。</p></div>
+        <div class="need-item"><strong>経理・会計の流れを整えたい</strong><p>請求、入金、経費精算、給与、会計入力の流れを可視化し、属人化を抑えます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-warm">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">02</span><div><h2 class="section-title">事務所について</h2><p class="section-title-en">ABOUT</p></div></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>経営上の意思決定は、ひとつの数字だけで完結しません。役員報酬を変えれば法人税だけでなく社会保険料も動き、設備投資のタイミングは資金繰りや補助金のスケジュールとも関係します。相続・事業承継では、相続税、贈与税、株価評価、納税資金が同時に問題になります。</p>
+          <p>当事務所は、税務・会計を中心に、周辺制度との関係も踏まえて現状を整理し、「何をすると、何がいくら動くか」を説明します。お客様自身が理解し、納得して判断できることを重視しています。</p>
+          <p>特に、バックオフィスの業務フロー整備を得意領域のひとつとしています。請求、入金、経費精算、給与、会計入力が属人化したままでは、数字の正確性も判断の速度も下がります。業務を可視化・標準化し、会計データを活かせる状態に整えることを大切にしています。</p>
+        </div>
+        <aside class="profile-box reveal" aria-label="代表プロフィール">
+          <div class="profile-head"><div class="profile-mark" aria-hidden="true">YK</div><div><p class="profile-name">結城 宏太</p><p class="profile-role">税理士 / 登録番号 139208</p></div></div>
+          <div class="profile-row"><span class="profile-label">資格</span><span class="profile-value">税理士（2018年登録）</span></div>
+          <div class="profile-row"><span class="profile-label">所属</span><span class="profile-value">近畿税理士会 大淀支部</span></div>
+          <div class="profile-row"><span class="profile-label">略歴</span><span class="profile-value">2013年 税理士法人入社<br>大学院修士課程修了・税理士試験合格<br>2018年 税理士登録<br>2026年4月 独立開業</span></div>
+          <div class="profile-row"><span class="profile-label">所在地</span><span class="profile-value">大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="policy">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">03</span><div><h2 class="section-title">業務の基本方針</h2><p class="section-title-en">POLICY</p></div></div>
+      <div class="policy-grid reveal">
+        <div class="policy-item"><span class="policy-num">01</span><h3>制度を横断して整理する</h3><p>税務だけで結論を急がず、資金繰り、社会保険料、補助金、相続・事業承継など、周辺制度との関係を確認します。</p></div>
+        <div class="policy-item"><span class="policy-num">02</span><h3>数字で比較できる形にする</h3><p>判断に必要な前提を明確にし、複数パターンの試算や概算を用いて、意思決定しやすい状態にします。</p></div>
+        <div class="policy-item"><span class="policy-num">03</span><h3>実務に定着する運用をつくる</h3><p>会計ソフトやツールを入れるだけで終わらせず、日々の業務の流れ、チェック体制、資料の残し方まで整えます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-light">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">04</span><div><h2 class="section-title">業務内容</h2><p class="section-title-en">SERVICES</p></div></div>
+      <p class="lead-text reveal">中小企業・個人事業主の月次顧問を中心に、相続税申告、創業支援、会計環境の構築、業務フロー整備、税務調査対応まで対応します。各業務の内容と料金は、個別ページで詳しく整理しています。</p>
+      <div class="services-grid reveal"><article class="service-card">
+    <span class="service-num">01</span>
+    <h3 class="service-name">法人・個人事業主の税務顧問</h3>
+    <p class="service-desc">月次会計、税務相談、決算申告、資金繰りの確認まで、日常の数字を経営判断に使える状態へ整えます。</p>
+    <p class="service-price">法人 月額35,000円〜 / 個人 月額20,000円〜</p>
+    <a class="text-link" href="tax-advisory.html">詳しく見る</a>
+  </article>
+<article class="service-card">
+    <span class="service-num">02</span>
+    <h3 class="service-name">相続税申告・相続対策</h3>
+    <p class="service-desc">相続発生後の申告だけでなく、生前の財産整理、納税資金、贈与・保険・不動産の扱いまで、早い段階から整理します。</p>
+    <p class="service-price">遺産総額の0.5〜1.0%目安 / 最低165,000円〜</p>
+    <a class="text-link" href="inheritance.html">詳しく見る</a>
+  </article>
+<article class="service-card">
+    <span class="service-num">03</span>
+    <h3 class="service-name">創業支援・会社設立後の税務</h3>
+    <p class="service-desc">開業届、法人設立後の届出、役員報酬、消費税、インボイス、会計ソフト、初期の資金計画をまとめて整理します。</p>
+    <p class="service-price">初回相談で状況確認 / 個別見積もり</p>
+    <a class="text-link" href="startup.html">詳しく見る</a>
+  </article>
+<article class="service-card highlight">
+    <span class="service-num">04</span>
+    <h3 class="service-name">会計環境構築・業務フロー整備</h3>
+    <p class="service-desc">請求、入金、経費精算、給与、会計入力の流れを可視化し、属人化を抑えながら会計データの精度を高めます。</p>
+    <p class="service-price">個別見積もり</p>
+    <a class="text-link" href="accounting-dx.html">詳しく見る</a>
+  </article>
+<article class="service-card">
+    <span class="service-num">05</span>
+    <h3 class="service-name">税務調査・各種対応</h3>
+    <p class="service-desc">税務調査の事前準備、当日の立会い、調査後の対応、届出・申告書類の整理など、必要な範囲を明確にして支援します。</p>
+    <p class="service-price">内容により個別見積もり</p>
+    <a class="text-link" href="tax-investigation.html">詳しく見る</a>
+  </article></div>
+      <div class="center-actions reveal"><a href="services.html" class="btn-secondary dark">業務内容一覧を見る</a><a href="fees.html" class="btn-secondary dark">料金一覧を見る</a></div>
+    </div>
+  </section>
+
+  <section id="area" class="section-warm">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">05</span><div><h2 class="section-title">対応エリア</h2><p class="section-title-en">AREA</p></div></div>
+      <div class="area-box reveal">
+        <div><h3>大阪府</h3><p>大阪市、堺市、豊中市、吹田市、高槻市、茨木市、枚方市、東大阪市、箕面市、池田市ほか。梅田の事務所での面談、オンライン面談に対応します。</p><div class="area-tags" aria-hidden="true"><span class="area-tag primary">大阪府全域</span><span class="area-tag">大阪市</span><span class="area-tag">堺市</span><span class="area-tag">豊中市</span><span class="area-tag">吹田市</span><span class="area-tag">高槻市</span><span class="area-tag">茨木市</span><span class="area-tag">枚方市</span><span class="area-tag">東大阪市</span></div></div>
+        <div><h3>兵庫県</h3><p>神戸市、西宮市、尼崎市、芦屋市、伊丹市、宝塚市、川西市、明石市、加古川市、姫路市ほか。事業者・相続のご相談に対応します。</p><div class="area-tags" aria-hidden="true"><span class="area-tag primary">兵庫県全域</span><span class="area-tag">神戸市</span><span class="area-tag">尼崎市</span><span class="area-tag">西宮市</span><span class="area-tag">芦屋市</span><span class="area-tag">伊丹市</span><span class="area-tag">宝塚市</span><span class="area-tag">川西市</span><span class="area-tag">明石市</span><span class="area-tag">姫路市</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">06</span><div><h2 class="section-title">ご相談の流れ</h2><p class="section-title-en">FLOW</p></div></div>
+      <div class="flow-grid reveal">
+        <div class="flow-item"><span class="flow-step">STEP 01</span><p class="flow-title">お問い合わせ</p><p class="flow-desc">フォームまたはお電話でご連絡ください。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 02</span><p class="flow-title">初回相談</p><p class="flow-desc">現状、課題、期限、希望する支援範囲を確認します。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 03</span><p class="flow-title">資料確認</p><p class="flow-desc">必要に応じて決算書、試算表、申告書等を確認します。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 04</span><p class="flow-title">見積・提案</p><p class="flow-desc">業務範囲、料金、開始時期を明確にします。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 05</span><p class="flow-title">契約・開始</p><p class="flow-desc">契約後、データ共有と運用フローを整えます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="section-dark">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">07</span><div><h2 class="section-title">アクセス</h2><p class="section-title-en">ACCESS</p></div></div>
+      <div class="access-grid reveal">
+        <div>
+          <address class="access-address"><strong>結城宏太税理士事務所</strong>〒530-0011<br>大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階<br>TEL：<a href="tel:+81676886391" data-track="tel">06-7688-6391</a><br>受付時間：平日 9:00〜18:00</address>
+          <div class="access-routes"><div class="access-route"><span class="route-line">JR</span><span class="route-desc">大阪駅から徒歩圏内</span></div><div class="access-route"><span class="route-line">Osaka Metro</span><span class="route-desc">梅田駅・西梅田駅・東梅田駅からアクセス可能</span></div><div class="access-route"><span class="route-line">阪急・阪神</span><span class="route-desc">大阪梅田駅からアクセス可能</span></div></div>
+          <p class="route-note">来所面談のほか、Zoom等を利用したオンライン相談にも対応しています。</p>
+        </div>
+        <div class="access-map"><iframe title="結城宏太税理士事務所の所在地" src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA5-54&output=embed" width="600" height="380" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">08</span><div><h2 class="section-title">よくある質問</h2><p class="section-title-en">FAQ</p></div></div>
+      <div class="faq-list reveal"><details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">顧問料はどのくらいかかりますか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">法人顧問は月額35,000円〜、個人事業主は月額20,000円〜を目安としています。年商、取引量、記帳の有無、面談頻度、決算申告の範囲により変動しますので、初回相談後に見積書で明示します。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">現在の税理士から変更できますか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">対応可能です。決算期末での切り替えが最もスムーズですが、年度途中からの切り替えも状況により可能です。前任事務所との引き継ぎ資料や会計データの確認も含めて進めます。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">会計ソフトは指定がありますか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">特定のソフトに限定していません。既に利用中のソフトがある場合は、まず現状を確認します。新規導入の場合は、業務フロー、利用人数、請求・給与との連携、費用対効果を踏まえて提案します。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">大阪・兵庫以外の事業者でも相談できますか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">オンライン面談により全国から相談可能です。訪問対応が必要な場合は、大阪府・兵庫県を中心に対応します。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">相続の相談はいつ頃すればよいですか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">生前対策であれば早い段階ほど選択肢が広がります。相続発生後は申告期限があるため、財産の概要が分かった段階で早めにご相談ください。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">初回相談では何を準備すればよいですか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">特別な書類がなくても相談可能です。法人・個人事業主の場合は直近の決算書、試算表、申告書、会計ソフトの状況が分かる資料があれば、より具体的にお話しできます。相続の場合は財産の種類と概算が分かる資料があれば参考になります。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">フォームに資料や個人番号を送ってもよいですか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">お問い合わせフォームでは、マイナンバー、本人確認書類、通帳画像などの機微情報は送信しないでください。必要資料は、相談内容を確認した後、安全な方法を個別にご案内します。</p></details>
+<details class="faq-item"><summary class="faq-q"><span class="faq-q-main"><span class="faq-q-prefix">Q.</span><span class="faq-q-text">守秘義務は守られますか？</span></span><span class="faq-icon" aria-hidden="true"></span></summary><p class="faq-a">税理士法第38条により、税理士には法定の守秘義務が課されています。お預かりした情報は厳重に管理し、業務上必要な範囲を超えて利用・開示することはありません。</p></details></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-warm">
+    <div class="section-inner">
+      <div class="section-header reveal"><span class="section-num">09</span><div><h2 class="section-title">お問い合わせ</h2><p class="section-title-en">CONTACT</p></div></div>
+      <div class="contact-grid reveal">
+        <div>
+          <p class="contact-lead">初回30分程度のご相談は無料で承ります。</p>
+          <div class="contact-conditions"><p>相談内容、期限、現在の状況を分かる範囲でご記入ください。マイナンバー、本人確認書類、通帳画像などの機微情報はフォームに入力・添付しないでください。</p></div>
+          <div class="contact-direct"><p class="contact-direct-label">お電話でのご連絡</p><a href="tel:+81676886391" class="contact-direct-tel" data-track="tel">06-7688-6391</a><p class="contact-small">受付時間：平日 9:00〜18:00</p><p class="contact-direct-label mt">メールでのご連絡</p><a href="mailto:info@yuki-tax.jp" class="contact-direct-mail">info@yuki-tax.jp</a></div>
+        </div>
+        <div class="contact-form" aria-live="polite">
+          <form id="contactForm" action="https://formspree.io/f/maqlllje" method="POST" novalidate>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+            <div class="form-grid">
+              <div class="form-row"><label class="form-label" for="name">お名前<span>必須</span></label><input class="form-input" id="name" name="name" type="text" autocomplete="name" required aria-required="true"></div>
+              <div class="form-row"><label class="form-label" for="company">会社名・屋号</label><input class="form-input" id="company" name="company" type="text" autocomplete="organization"></div>
+              <div class="form-row"><label class="form-label" for="email">メールアドレス<span>必須</span></label><input class="form-input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true"></div>
+              <div class="form-row"><label class="form-label" for="tel">電話番号</label><input class="form-input" id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
+              <div class="form-row"><label class="form-label" for="areaInput">所在地</label><input class="form-input" id="areaInput" name="area" type="text" placeholder="例：大阪市北区、兵庫県西宮市"></div>
+              <div class="form-row"><label class="form-label" for="service">ご相談内容</label><select class="form-select" id="service" name="service"><option value="">選択してください</option><option>税務顧問</option><option>創業・法人化</option><option>相続税申告・相続対策</option><option>会計環境・業務フロー整備</option><option>税務調査対応</option><option>その他</option></select></div>
+              <div class="form-row full"><label class="form-label" for="message">お問い合わせ内容<span>必須</span></label><textarea class="form-textarea" id="message" name="message" required aria-required="true" placeholder="ご相談の概要、期限、現在困っていることをご記入ください。"></textarea></div>
+            </div>
+            <div class="consent-row"><input type="checkbox" id="consent" required aria-required="true"><label class="consent-label" for="consent"><a href="privacy.html">個人情報保護方針</a>に同意のうえ送信します。</label></div>
+            <button type="submit" class="form-submit">送信する</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="sticky-cta" aria-label="固定お問い合わせ導線">
+  <a href="tel:+81676886391" class="sticky-tel" data-track="tel">電話</a>
+  <a href="index.html#contact" class="sticky-form">無料相談</a>
 </div>
-
-<div class="hero" id="top">
-  <div class="hero-left">
-    <!-- ▼ S級修正: ヒーローバッジに兵庫追加 -->
-    <span class="hero-badge">税理士事務所 / 大阪・兵庫</span>
-    <h1 class="hero-title">結城宏太<br>税理士事務所</h1>
-    <p class="hero-title-en">YUKI KOTA TAX ACCOUNTANT OFFICE</p>
-    <!-- ▼ A級修正: ヒーローコピーをより幅広い訪問者に届く表現へ -->
-    <p class="hero-lead">
-      何をしたら、何がいくら動くか。<br>
-      会計・税務・社会保険・補助金——<br>
-      制度のつながりを丁寧に説明し、<br>
-      全体最適の提案をします。
-    </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary">無料相談を申し込む（初回30分）</a>
-      <a href="#services" class="btn-secondary">業務内容・料金を見る</a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="slideshow" id="heroSlide">
-      <div class="slide active">
-        <img src="images/lobby.jpg" alt="結城宏太税理士事務所 ゲートタワーオフィス ロビー">
-      </div>
-      <div class="slide">
-        <img src="images/tower.jpg" alt="グラングリーン大阪 南館 ゲートタワー外観">
-      </div>
-      <div class="slide">
-        <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
-      </div>
-      <button class="slide-btn slide-prev" aria-label="前の画像">
-        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </button>
-      <button class="slide-btn slide-next" aria-label="次の画像">
-        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </button>
-      <div class="slide-dots">
-        <button class="slide-dot active" aria-label="1枚目"></button>
-        <button class="slide-dot" aria-label="2枚目"></button>
-        <button class="slide-dot" aria-label="3枚目"></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section id="about">
-  <div class="section-header reveal">
-    <span class="section-num">01</span>
-    <div>
-      <h2 class="section-title">事務所について</h2>
-      <p class="section-title-en">ABOUT</p>
-    </div>
-  </div>
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>経営上の意思決定は、ひとつの数字で完結しません。役員報酬を変えれば法人税だけでなく社会保険料も動く。設備投資のタイミングは補助金の採択スケジュールと連動する。事業承継の手法は相続税・贈与税・株価評価の三者が絡み合う——そうした「制度のつながり」を把握していなければ、個別の最適解を積み上げても全体が最適にはなりません。</p>
-      <p>当事務所は、税務・会計・社会保険・各種補助制度を横断して現状を整理し、「何をすると何がいくら動くか」をシミュレーションとともに説明します。お客様自身が理解・納得して判断できることが、最も重要だと考えているからです。</p>
-      <p>当事務所はとりわけ、バックオフィスの業務フロー整備を得意領域のひとつとしています。請求・入金・経費精算・給与といった日常業務が属人化したまま放置されると、数字の正確性も経営判断の速度も下がります。業務を可視化・標準化し、自動化できるところは自動化する——この設計を税務・会計の文脈と切り離さず一体で行うことが、当事務所の特徴です。</p>
-      <p>税務申告・相続・事業承継といった専門領域はもちろん、大阪・グラングリーン大阪を拠点に大阪府・兵庫県全域で対応します。オンライン（Zoom等）による相談も随時受け付けております。</p>
-    </div>
-    <!-- ▼ S級修正⑥: プロフィール写真エリアを追加 -->
-    <div class="about-profile-wrap reveal">
-      <div class="about-profile">
-        <div class="profile-row">
-          <span class="profile-label">氏名</span>
-          <span class="profile-value">結城　宏太（ゆうき こうた）</span>
-        </div>
-        <div class="profile-row">
-          <span class="profile-label">資格</span>
-          <span class="profile-value">税理士（2018年登録）<br>登録番号 139208</span>
-        </div>
-        <div class="profile-row">
-          <span class="profile-label">所属</span>
-          <span class="profile-value">近畿税理士会　大淀支部</span>
-        </div>
-        <div class="profile-row">
-          <span class="profile-label">略歴</span>
-          <span class="profile-value">2013年 税理士法人入社<br>大学院修士課程修了・税理士試験合格<br>2018年 税理士登録<br>2026年4月 独立開業</span>
-        </div>
-        <div class="profile-row">
-          <span class="profile-label">所在地</span>
-          <span class="profile-value">大阪府大阪市北区大深町5-54<br>グラングリーン大阪 南館 ゲートタワー7階</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="policy">
-  <div class="section-header reveal">
-    <span class="section-num">—</span>
-    <div>
-      <h2 class="section-title">業務の基本方針</h2>
-      <p class="section-title-en">OUR POLICY</p>
-    </div>
-  </div>
-  <div class="policy-grid reveal">
-    <div class="policy-item">
-      <span class="policy-num">01</span>
-      <h3 class="policy-title">適正な税務の実現</h3>
-      <p class="policy-desc">税理士として独立・公正な立場から、納税義務の適正な実現を図ります。「1円も多く支払わせない、1円も少なく支払わせない」——それが専門家としての責務です。</p>
-    </div>
-    <div class="policy-item">
-      <span class="policy-num">02</span>
-      <h3 class="policy-title">丁寧な説明と意思決定のサポート</h3>
-      <p class="policy-desc">前提条件が変われば答えも変わります。あらゆる条件を想定したシミュレーションと丁寧な説明により、お客様自身が理解・納得して判断を下せるようサポートします。</p>
-    </div>
-    <div class="policy-item">
-      <span class="policy-num">03</span>
-      <h3 class="policy-title">リスク分析による完全防衛</h3>
-      <p class="policy-desc">企業や個人を取り巻くリスクはあらゆるところに存在します。徹底したリスク分析によってお客様のリスクを可能な限り軽減し、事前の対策で被害を最小限に抑えます。</p>
-    </div>
-  </div>
-</section>
-
-<div class="photo-strip reveal">
-  <div class="strip-photo">
-    <img src="images/exterior1.jpg" alt="グラングリーン大阪 外観">
-    <span class="strip-caption">グラングリーン大阪</span>
-  </div>
-  <div class="strip-photo">
-    <img src="images/lobby.jpg" alt="ゲートタワーオフィス ロビー">
-    <span class="strip-caption">GATE TOWER OFFICE</span>
-  </div>
-  <div class="strip-photo">
-    <img src="images/tower.jpg" alt="グラングリーン大阪 南館 ゲートタワー">
-    <span class="strip-caption">南館 ゲートタワー</span>
-  </div>
-</div>
-
-<!-- ▼ S級修正⑦: サービスに料金目安を追加、「詳細ページ準備中」を廃止 -->
-<section id="services">
-  <div class="section-header reveal">
-    <span class="section-num">02</span>
-    <div>
-      <h2 class="section-title">業務内容・料金</h2>
-      <p class="section-title-en">SERVICES &amp; FEES</p>
-    </div>
-  </div>
-  <p class="services-intro reveal">中小企業の経営者が直面する税務・財務上の課題に幅広く対応します。料金はお客様の状況や業務規模によって異なりますので、初回無料相談でお気軽にご確認ください。</p>
-  <div class="services-grid reveal">
-    <div class="service-item">
-      <span class="service-num">01</span>
-      <h3 class="service-name">法人・個人事業<br>顧問</h3>
-      <p class="service-desc">月次の会計帳簿の確認と財務状況のチェック。税務届出・税務申告・税務調査対応に加え、バックオフィス業務のデジタル化支援も行います。</p>
-      <span class="service-price">法人 月額35,000円〜 / 個人 月額20,000円〜（年商・訪問頻度等により変動）</span>
-    </div>
-    <div class="service-item">
-      <span class="service-num">02</span>
-      <h3 class="service-name">資産税対策・<br>相続税申告</h3>
-      <p class="service-desc">相続対策から発生後の申告まで一貫して対応。法人の場合は自社株・事業用資産の問題も扱います。ヒアリング・資料収集・分析を経て相続シミュレーションを実施します。</p>
-      <span class="service-price">遺産総額の0.5〜1.0%（最低165,000円）</span>
-    </div>
-    <div class="service-item">
-      <span class="service-num">03</span>
-      <h3 class="service-name">会計環境の<br>構築・支援</h3>
-      <p class="service-desc">自動記帳が機能する体制の設計・導入支援。顧問先を主体に、データが自然と集まるフローを整えます。既存ソフトの継続利用にも対応します。</p>
-      <span class="service-price">個別見積もり（スポット対応可）</span>
-    </div>
-    <div class="service-item highlight">
-      <span class="service-num">04</span>
-      <h3 class="service-name">業務フロー<br>整備支援</h3>
-      <p class="service-desc">バックオフィス業務を可視化し、属人化の解消と業務効率化を支援します。当事務所が特に力を入れている領域です。</p>
-      <span class="service-price">個別見積もり（月次顧問と組み合わせ可）</span>
-    </div>
-    <div class="service-item">
-      <span class="service-num">05</span>
-      <h3 class="service-name">資金計画・<br>経営計画</h3>
-      <p class="service-desc">キャッシュフロー予測・損益シミュレーションで、将来の経営判断を数値で裏付けます。融資対策・経営改善計画書の作成にも対応します。</p>
-      <span class="service-price">個別見積もり</span>
-    </div>
-    <div class="service-item">
-      <span class="service-num">06</span>
-      <h3 class="service-name">税務調査・<br>各種対応</h3>
-      <p class="service-desc">税務調査対応・不服申立て・各種届出書類の作成。専門家として的確にサポートします。創業時の各種届出・会社設立サポートも承ります。</p>
-      <span class="service-price">内容・規模により個別見積もり</span>
-    </div>
-  </div>
-</section>
-
-<section id="access">
-  <div class="section-header reveal">
-    <span class="section-num">03</span>
-    <div>
-      <h2 class="section-title">アクセス</h2>
-      <p class="section-title-en" style="color:var(--accent-light);">ACCESS</p>
-    </div>
-  </div>
-  <div class="access-grid reveal">
-    <div>
-      <div class="access-address">
-        <strong>結城宏太税理士事務所</strong>
-        〒530-0011<br>
-        大阪府大阪市北区大深町5-54<br>
-        グラングリーン大阪 南館 ゲートタワー7階<br><br>
-        TEL：<a href="tel:0676886391" style="color:#a8b4c4;text-decoration:none;">06-7688-6391</a><br>
-        受付時間：平日 9:00〜18:00
-      </div>
-      <div class="access-routes">
-        <div class="access-route">
-          <span class="route-line">JR</span>
-          <span class="route-desc">「大阪駅」うめきた地下口より<br>徒歩約5分（地下通路にて直結）</span>
-        </div>
-        <div class="access-route">
-          <span class="route-line">大阪メトロ</span>
-          <span class="route-desc">御堂筋線「梅田駅」北改札より<br>徒歩約10分</span>
-        </div>
-        <div class="access-route">
-          <span class="route-line">阪急</span>
-          <span class="route-desc">「大阪梅田駅」2階中央改札口より<br>徒歩約12分</span>
-        </div>
-        <div class="access-route">
-          <span class="route-line">阪神</span>
-          <span class="route-desc">「大阪梅田駅」西口より<br>徒歩約8分</span>
-        </div>
-      </div>
-      <p class="route-note">※ 所要時間は目安です。ご来所の際はご連絡ください。<br>※ オンライン（Zoom等）でのご相談も随時対応しております。</p>
-    </div>
-    <div class="access-map">
-      <!-- ▼ A級修正: 座標ベースの安定したiframe URLに変更 -->
-      <iframe
-        src="https://maps.google.com/maps?q=34.7024,135.4970&z=17&output=embed"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="結城宏太税理士事務所の地図 グラングリーン大阪 南館 ゲートタワー7階">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- ▼ A級修正: FAQセクション新規追加 -->
-<section id="faq">
-  <div class="section-header reveal">
-    <span class="section-num">—</span>
-    <div>
-      <h2 class="section-title">よくある質問</h2>
-      <p class="section-title-en">FAQ</p>
-    </div>
-  </div>
-  <div class="faq-list reveal">
-
-    <details class="faq-item">
-      <summary class="faq-q">
-        <span><span class="faq-q-prefix">Q.</span><span class="faq-q-text">顧問料はどのくらいかかりますか？</span></span>
-        <span class="faq-q-icon" aria-hidden="true"></span>
-      </summary>
-      <p class="faq-a">法人顧問は月額35,000円〜、個人事業主の方は月額20,000円〜を目安としています。年商・取引量・訪問頻度・記帳の有無等によって変わりますので、初回相談でお客様の状況をお聞きしてからお見積もりします。相続税申告は遺産総額の0.5〜1.0%（最低165,000円）が目安です。</p>
-    </details>
-
-    <details class="faq-item">
-      <summary class="faq-q">
-        <span><span class="faq-q-prefix">Q.</span><span class="faq-q-text">現在の税理士から変更することはできますか？</span></span>
-        <span class="faq-q-icon" aria-hidden="true"></span>
-      </summary>
-      <p class="faq-a">はい、対応しております。変更のタイミングは通常「決算期末」が最もスムーズですが、年度途中からの切り替えも可能です。前任事務所への連絡方法や引き継ぎ手続きについてもサポートいたします。まずはお気軽にご相談ください。</p>
-    </details>
-
-    <details class="faq-item">
-      <summary class="faq-q">
-        <span><span class="faq-q-prefix">Q.</span><span class="faq-q-text">会計ソフトは指定がありますか？</span></span>
-        <span class="faq-q-icon" aria-hidden="true"></span>
-      </summary>
-      <p class="faq-a">原則として、お客様に最適なシステムをご提案します。既にお使いのソフトがある場合はご相談ください。</p>
-    </details>
-
-    <details class="faq-item">
-      <summary class="faq-q">
-        <span><span class="faq-q-prefix">Q.</span><span class="faq-q-text">大阪・兵庫以外の事業者でも相談できますか？</span></span>
-        <span class="faq-q-icon" aria-hidden="true"></span>
-      </summary>
-      <p class="faq-a">オンライン（Zoom等）でのご相談が可能ですので、全国どこからでもご連絡いただけます。ご来所が難しい方もお気軽にお問い合わせください。現地訪問が必要な場合は、大阪府・兵庫県を中心に対応しております。</p>
-    </details>
-
-    <details class="faq-item">
-      <summary class="faq-q">
-        <span><span class="faq-q-prefix">Q.</span><span class="faq-q-text">相続の相談は、いつ頃すればよいですか？</span></span>
-        <span class="faq-q-icon" aria-hidden="true"></span>
-      </summary>
-      <p class="faq-a">「相続が発生する前」が理想です。生前の対策（暦年贈与・遺言書・生命保険の活用等）を講じることで、相続税・相続トラブルを大きく軽減できます。相続発生後は10ヶ月以内に申告が必要になりますので、できるだけ早めにご連絡ください。</p>
-    </details>
-
-    <details class="faq-item">
-      <summary class="faq-q">
-        <span><span class="faq-q-prefix">Q.</span><span class="faq-q-text">初回の無料相談では何を準備すればよいですか？</span></span>
-        <span class="faq-q-icon" aria-hidden="true"></span>
-      </summary>
-      <p class="faq-a">特別な書類のご準備は不要です。現状の課題や疑問点を整理してきていただけると、より具体的なお話ができます。法人の場合は直近の試算表・決算書があれば参考になります。相続のご相談の場合は、財産の種類（不動産・預金・有価証券等）の概要をお教えいただけると、当日の話がスムーズです。</p>
-    </details>
-
-  </div>
-</section>
-
-<section id="contact">
-  <div class="section-header reveal">
-    <span class="section-num">04</span>
-    <div>
-      <h2 class="section-title">お問い合わせ</h2>
-      <p class="section-title-en">CONTACT</p>
-    </div>
-  </div>
-  <div class="contact-grid reveal">
-    <div>
-      <p class="contact-lead">初回30分程度のご相談は無料で承ります。</p>
-      <div class="contact-conditions">
-        一般的なご相談に限ります。<br>
-        内容によっては、事前に決算書・試算表等の資料をご準備いただく場合があります。<br>
-        通常3営業日以内を目安にご返信いたします（内容により前後する場合があります）。
-      </div>
-      <div class="contact-direct">
-        <p class="contact-direct-label">お電話でのご連絡</p>
-        <a href="tel:0676886391" class="contact-direct-tel">06-7688-6391</a>
-        <p style="font-size:12px;color:var(--ink-xlight);margin-top:6px;letter-spacing:0.05em;">受付時間：平日 9:00〜18:00</p>
-      </div>
-    </div>
-    <div class="contact-form">
-      <div data-fs-success style="display:none; font-size:15px; color:var(--accent); line-height:2.4; padding:16px 0;">
-        お問い合わせありがとうございます。<br>通常3営業日以内を目安にご返信いたします。
-      </div>
-      <div data-fs-error style="display:none; font-size:13px; color:#b04040; margin-bottom:20px;"></div>
-      <form id="contactForm">
-        <div class="form-row">
-          <label class="form-label" for="name">お名前<span>必須</span></label>
-          <input class="form-input" type="text" id="name" name="name" required autocomplete="name" data-fs-field>
-          <span data-fs-error="name" style="font-size:12px;color:#b04040;"></span>
-        </div>
-        <div class="form-row">
-          <label class="form-label" for="company">会社名・屋号</label>
-          <input class="form-input" type="text" id="company" name="company" autocomplete="organization">
-        </div>
-        <div class="form-row">
-          <label class="form-label" for="email">メールアドレス<span>必須</span></label>
-          <input class="form-input" type="email" id="email" name="email" required autocomplete="email" data-fs-field>
-          <span data-fs-error="email" style="font-size:12px;color:#b04040;"></span>
-        </div>
-        <div class="form-row">
-          <label class="form-label" for="message">お問い合わせ内容<span>必須</span></label>
-          <textarea class="form-textarea" id="message" name="message" required data-fs-field></textarea>
-          <span data-fs-error="message" style="font-size:12px;color:#b04040;"></span>
-        </div>
-        <div class="consent-row">
-          <input type="checkbox" id="consent" name="consent" required>
-          <label class="consent-label" for="consent">
-            <a href="privacy.html">個人情報保護方針</a>に同意のうえ送信します。
-          </label>
-        </div>
-        <button class="form-submit" type="submit" data-fs-submit-btn>送信する &#8594;</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer>
+<button class="to-top" id="toTop" type="button" aria-label="ページトップへ戻る"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 15 12 9 18 15"></polyline></svg></button>
+<footer class="site-footer">
   <div>
     <p class="footer-name">結城宏太税理士事務所</p>
-    <address class="footer-address">
-      〒530-0011　大阪府大阪市北区大深町5-54　グラングリーン大阪 南館 ゲートタワー7階<br>
-      TEL <a href="tel:0676886391">06-7688-6391</a>　受付時間：平日 9:00〜18:00<br>
-      税理士登録番号：139208　近畿税理士会 大淀支部所属
-    </address>
+    <address class="footer-address">〒530-0011<br>大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階<br>TEL <a href="tel:+81676886391" data-track="tel">06-7688-6391</a>　受付時間：平日 9:00〜18:00<br>MAIL <a href="mailto:info@yuki-tax.jp">info@yuki-tax.jp</a></address>
   </div>
   <div class="footer-right">
-    <!-- ▼ S級修正: 特定商取引法リンクを追加 -->
-    <div class="footer-links">
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="services.html">業務内容</a>
+      <a href="fees.html">料金</a>
       <a href="privacy.html">個人情報保護方針</a>
       <a href="tokutei.html">特定商取引法に基づく表記</a>
-      <a href="#access">アクセス</a>
-    </div>
-    <p class="footer-copy">&#169; 2026 結城宏太税理士事務所</p>
+      <a href="sitemap.xml">サイトマップ</a>
+    </nav>
+    <p class="footer-copy">© 2026 結城宏太税理士事務所</p>
   </div>
 </footer>
-
-<script>
-  const ham = document.getElementById('hamburger');
-  const mNav = document.getElementById('mobileNav');
-  ham.addEventListener('click', () => { ham.classList.toggle('open'); mNav.classList.toggle('open'); });
-  function closeMenu() { ham.classList.remove('open'); mNav.classList.remove('open'); }
-
-  const reveals = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.06 });
-  reveals.forEach(el => io.observe(el));
-
-  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-  formspree('initForm', { formElement: '#contactForm', formId: 'maqlllje' });
-
-  // slideshow
-  const slides = document.querySelectorAll('#heroSlide .slide');
-  const dots = document.querySelectorAll('#heroSlide .slide-dot');
-  let current = 0, timer;
-  function goTo(n) {
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = (n + slides.length) % slides.length;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-    clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 5000);
-  }
-  document.querySelector('.slide-prev').addEventListener('click', () => goTo(current - 1));
-  document.querySelector('.slide-next').addEventListener('click', () => goTo(current + 1));
-  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-  timer = setInterval(() => goTo(current + 1), 5000);
-
-  // GA4: お問い合わせフォーム送信イベント計測
-  document.getElementById('contactForm').addEventListener('submit', function() {
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'generate_lead', { 'event_category': 'contact', 'event_label': 'form_submit' });
-    }
-  });
-  // GA4: 電話番号クリック計測
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
-    el.addEventListener('click', function() {
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'click', { 'event_category': 'contact', 'event_label': 'tel_click' });
-      }
-    });
-  });
-</script>
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

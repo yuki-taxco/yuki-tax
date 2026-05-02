@@ -1,0 +1,19 @@
+{
+  "name": "結城宏太税理士事務所",
+  "short_name": "結城税理士",
+  "icons": [
+    {
+      "src": "/images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#242b38",
+  "background_color": "#f8f9fb",
+  "display": "standalone"
+}
