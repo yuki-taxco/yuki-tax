@@ -58,10 +58,10 @@
 .svc-content-list li::before{content:"—";margin-right:8px;color:var(--rule)}
 .svc-highlight-row .svc-name-cell{color:var(--accent)}
 .svc-highlight-row td{border-left:3px solid var(--accent);padding-left:17px}
-.page-subnav{display:flex;gap:0;border-top:1px solid var(--rule-light);border-bottom:1px solid var(--rule-light);background:var(--paper-strong);overflow-x:auto}
+.page-subnav{display:flex;gap:0;border-top:1px solid var(--rule-light);border-bottom:1px solid var(--rule-light);background:var(--paper-strong);overflow-x:auto;padding:0 48px}
 .page-subnav a{display:inline-flex;align-items:center;padding:16px 24px;font-size:13px;letter-spacing:.08em;color:var(--ink-muted);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
 .page-subnav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
-.needs-table{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:var(--paper-warm)}
+.needs-table{display:grid;grid-template-columns:repeat(2,1fr);gap:0;background:var(--paper-warm)}
 .need-block{background:var(--paper-strong);padding:30px 26px;border:1px solid var(--rule-light);margin:-1px 0 0 -1px}
 .need-block-title{font-family:var(--ff-serif);font-size:15px;font-weight:500;color:var(--ink);letter-spacing:.04em;margin-bottom:16px;line-height:1.6;padding-bottom:14px;border-bottom:1px solid var(--rule-light)}
 .need-block-list{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -123,19 +123,17 @@
 </section>
 
 <nav class="page-subnav" aria-label="ページ内ナビゲーション">
-  <div class="section-inner" style="display:flex;gap:0;padding-top:0;padding-bottom:0;">
-    <a href="#scope">対応業務と料金</a>
-    <a href="#needs">こんな方に</a>
-    <a href="#estimate">見積もりの考え方</a>
-    <a href="#flow">ご相談から契約まで</a>
-  </div>
+  <a href="#scope">対応業務と料金</a>
+  <a href="#needs">こんな方に</a>
+  <a href="#estimate">見積もりの考え方</a>
+  <a href="#flow">ご相談から契約まで</a>
 </nav>
 
 <!-- 対応業務と料金 -->
 <section id="scope">
   <div class="section-inner">
     <div class="section-header reveal">
-      <div><h2 class="section-title">対応業務と料金の目安</h2><p class="section-title-en">SERVICES &amp; FEES</p></div>
+      <div><h2 class="section-title">対応業務と料金の目安</h2></div>
     </div>
     <div class="svc-table-wrap reveal">
       <table class="svc-table">
@@ -174,8 +172,9 @@
               </ul>
             </td>
             <td class="col-fee">
-              <p class="svc-fee-main">遺産総額の 0.5〜1.0%</p>
-              <p class="svc-fee-note">最低 165,000円〜。財産の評価難易度、不動産数、相続人の人数、期限までの期間により変動します。</p>
+              <p class="svc-fee-main">申告　遺産総額の 0.5〜1.0%</p>
+              <p class="svc-fee-main" style="margin-top:4px;">試算・対策　最低160,000円〜</p>
+              <p class="svc-fee-note">財産の評価難易度、不動産数、相続人の人数、期限までの期間により変動します。</p>
             </td>
           </tr>
           <tr>
@@ -237,7 +236,7 @@
 <section id="needs" class="section-warm">
   <div class="section-inner">
     <div class="section-header reveal">
-      <div><h2 class="section-title">こんな方にご相談ください</h2><p class="section-title-en">WHO WE HELP</p></div>
+      <div><h2 class="section-title">こんな方はご相談ください</h2></div>
     </div>
     <div class="needs-table reveal">
       <div class="need-block">
@@ -264,7 +263,7 @@
           <li>会計ソフトや請求・入金の仕組みを最初から整えたい</li>
         </ul>
       </div>
-      <div class="need-block need-block-med">
+      <div class="need-block">
         <p class="need-block-title">経理・会計の仕組みを整えたい方</p>
         <ul class="need-block-list">
           <li>会計ソフトを導入したが自動化がうまく機能していない</li>
@@ -288,7 +287,7 @@
 <section id="estimate">
   <div class="section-inner">
     <div class="section-header reveal">
-      <div><h2 class="section-title">料金が変動する主な要素</h2><p class="section-title-en">HOW WE ESTIMATE</p></div>
+      <div><h2 class="section-title">料金が変動する主な要素</h2></div>
     </div>
     <p class="lead-text reveal">初回相談でお客様の状況を確認したうえで、見積書に報酬・消費税・実費の扱いを明示します。下記が見積りの際に確認する主な項目です。</p>
     <div class="variable-grid reveal">
@@ -316,7 +315,7 @@
 <section id="flow" class="section-warm">
   <div class="section-inner">
     <div class="section-header reveal">
-      <div><h2 class="section-title">ご相談から契約まで</h2><p class="section-title-en">FLOW</p></div>
+      <div><h2 class="section-title">ご相談から契約まで</h2></div>
     </div>
     <div class="estimate-flow reveal">
       <div class="est-step">
@@ -376,7 +375,6 @@
       <a href="faq.html">よくある質問</a>
       <a href="privacy.html">個人情報保護方針</a>
       <a href="tokutei.html">特定商取引法に基づく表記</a>
-      <a href="sitemap.html">サイトマップ</a>
     </nav>
     <p class="footer-copy">© 2026 結城宏太税理士事務所</p>
   </div>
