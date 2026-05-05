@@ -1,32 +1,134 @@
-# 結城宏太税理士事務所サイト 完成版
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#242b38">
+<title>サイトマップ | 結城宏太税理士事務所</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://yuki-tax.jp/sitemap.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.sitemap-section { margin-bottom: 48px; }
+.sitemap-section h2 { font-family: var(--ff-serif); font-size: 15px; font-weight: 500; letter-spacing: .1em; color: var(--ink); border-bottom: 1px solid var(--rule-light); padding-bottom: 12px; margin-bottom: 20px; }
+.sitemap-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.sitemap-list li a { font-size: 14px; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.sitemap-list li a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.sitemap-list li a::before { content: "—"; color: var(--rule); }
+.sitemap-desc { font-size: 12px; color: var(--ink-muted); margin-top: 2px; padding-left: 22px; }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">本文へスキップ</a>
+<header class="site-header" role="banner">
+  <a href="index.html#top" class="logo-wrap" aria-label="結城宏太税理士事務所 ホームへ">
+    <span class="logo-main">結城宏太税理士事務所</span>
+    <span class="logo-sub">YUKI KOTA TAX ACCOUNTANT OFFICE</span>
+  </a>
+  <nav class="global-nav" aria-label="グローバルナビゲーション">
+    <a href="index.html#about">事務所について</a>
+    <a href="services.html">業務・料金</a>
+    <a href="faq.html">よくある質問</a>
+    <a href="index.html#access">アクセス</a>
+    <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <a href="index.html#about" data-mclose>事務所について</a>
+  <a href="services.html" data-mclose>業務・料金</a>
+  <a href="faq.html" data-mclose>よくある質問</a>
+  <a href="index.html#access" data-mclose>アクセス</a>
+  <a href="index.html#contact" data-mclose class="mobile-cta">お問い合わせ（初回30分無料）</a>
+</nav>
 
-## 内容
+<main id="main">
+<section class="page-hero">
+  <div class="section-inner">
+    <p class="page-kicker">SITEMAP</p>
+    <h1>サイトマップ</h1>
+  </div>
+</section>
 
-- `index.html`：トップページ
-- `services.html`：業務内容一覧
-- `fees.html`：料金一覧
-- 個別ページ：`tax-advisory.html`, `inheritance.html`, `startup.html`, `accounting-dx.html`, `tax-investigation.html`
-- `privacy.html`, `tokutei.html`, `404.html`
-- `assets/css/style.css`, `assets/js/main.js`
-- `robots.txt`, `sitemap.xml`, `site.webmanifest`
+<section>
+  <div class="section-inner" style="max-width: 720px;">
 
-## 反映した主な方針
+    <div class="sitemap-section">
+      <h2>メインページ</h2>
+      <ul class="sitemap-list">
+        <li>
+          <a href="index.html">ホーム</a>
+          <p class="sitemap-desc">事務所概要・業務内容・ご相談の流れ・アクセス・お問い合わせ</p>
+        </li>
+        <li>
+          <a href="services.html">業務内容・料金</a>
+          <p class="sitemap-desc">対応業務と料金の目安・こんな方に・見積もりの考え方・相談から契約まで</p>
+        </li>
+        <li>
+          <a href="faq.html">よくある質問</a>
+          <p class="sitemap-desc">顧問料・税理士変更・会計ソフト・相続・守秘義務など</p>
+        </li>
+      </ul>
+    </div>
 
-- 最新GA4 ID `G-8JLDZXYHXQ` を全ページに設置。
-- プロフィール写真エリアは設けず、当面はイニシャル入りのプロフィールカードに統一。
-- 業務内容・料金はトップページから独立させ、個別ページと料金一覧ページへ分岐。
-- Claude統合版のアクセシビリティ、スライド一時停止、スティッキーCTA、ページトップ、対応エリアタグ等は採用。
-- 過度な保証表現（完全、防衛、必ず削減等）は不使用。
-- 社会保険・登記・補助金については、税理士業務外の手続代行と読まれないよう、試算・整理・専門家連携の表現に調整。
+    <div class="sitemap-section">
+      <h2>業務別ページ</h2>
+      <ul class="sitemap-list">
+        <li>
+          <a href="tax-advisory.html">法人・個人事業主の税務顧問</a>
+          <p class="sitemap-desc">月次会計・税務相談・決算申告・資金繰り確認</p>
+        </li>
+        <li>
+          <a href="inheritance.html">相続税申告・相続対策</a>
+          <p class="sitemap-desc">相続税申告・財産整理・生前対策</p>
+        </li>
+        <li>
+          <a href="startup.html">創業支援・会社設立後の税務</a>
+          <p class="sitemap-desc">開業届・法人設立後の届出・役員報酬・インボイス</p>
+        </li>
+        <li>
+          <a href="accounting-dx.html">会計環境構築・業務フロー整備</a>
+          <p class="sitemap-desc">業務フロー可視化・会計ソフト連携・属人化解消</p>
+        </li>
+        <li>
+          <a href="tax-investigation.html">税務調査・各種対応</a>
+          <p class="sitemap-desc">調査立会い・資料整理・調査後対応</p>
+        </li>
+      </ul>
+    </div>
 
-## 公開前に確認すること
+    <div class="sitemap-section">
+      <h2>法的情報</h2>
+      <ul class="sitemap-list">
+        <li><a href="privacy.html">個人情報保護方針</a></li>
+        <li><a href="tokutei.html">特定商取引法に基づく表記</a></li>
+      </ul>
+    </div>
 
-1. 既存画像 `images/lobby.jpg`, `images/tower.jpg`, `images/exterior1.jpg` を同じパスに配置してください。
-2. 料金表示について、税込・税別・実費別の事務所方針を最終確認してください。現状は「正式見積で明示」としています。
-3. Formspree のフォームID `maqlllje` が現在の受信先で問題ないか確認してください。
-4. Google Search Console に `sitemap.xml` を送信してください。
-5. Googleビジネスプロフィールの名称・住所・電話番号をサイトと一致させてください。
+  </div>
+</section>
+</main>
 
-## Wixで使う場合
-
-Wix上で完全に差し替えるのではなく、ページ本文・見出し・個別ページ構成をビルダー側で再現し、GA4・構造化データ・OGP・canonical等はWixのSEO設定／カスタムコードに分けて反映するのが現実的です。静的ホスティングに移行する場合は、このフォルダをそのまま公開用のベースにできます。
+<footer class="site-footer">
+  <div>
+    <p class="footer-name">結城宏太税理士事務所</p>
+    <address class="footer-address">〒530-0011<br>大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階<br>TEL <a href="tel:+81676886391">06-7688-6391</a>　受付時間：平日 9:00〜18:00</address>
+  </div>
+  <div class="footer-right">
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="services.html">業務・料金</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="privacy.html">個人情報保護方針</a>
+      <a href="tokutei.html">特定商取引法に基づく表記</a>
+    </nav>
+    <p class="footer-copy">© 2026 結城宏太税理士事務所</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
