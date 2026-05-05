@@ -1,32 +1,250 @@
-# 結城宏太税理士事務所サイト 完成版
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#242b38">
+<title>結城宏太税理士事務所 | 大阪・兵庫の税務顧問・相続・創業支援</title>
+<meta name="description" content="大阪・梅田（グラングリーン大阪）を拠点に、大阪府・兵庫県の中小企業・個人事業主・相続のご相談を支援。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備に対応。初回30分無料相談。">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="結城宏太税理士事務所">
+<link rel="canonical" href="https://yuki-tax.jp/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:title" content="結城宏太税理士事務所 | 大阪・兵庫の税務顧問・相続・創業支援">
+<meta property="og:description" content="大阪・梅田（グラングリーン大阪）を拠点に、大阪府・兵庫県の中小企業・個人事業主・相続のご相談を支援。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備に対応。初回30分無料相談。">
+<meta property="og:image" content="https://yuki-tax.jp/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="結城宏太税理士事務所">
+<meta property="og:url" content="https://yuki-tax.jp/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="結城宏太税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="結城宏太税理士事務所 | 大阪・兵庫の税務顧問・相続・創業支援">
+<meta name="twitter:description" content="大阪・梅田（グラングリーン大阪）を拠点に、大阪府・兵庫県の中小企業・個人事業主・相続のご相談を支援。税務顧問、相続税申告、創業支援、会計環境構築・業務フロー整備に対応。初回30分無料相談。">
+<meta name="twitter:image" content="https://yuki-tax.jp/images/ogp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://maps.google.com">
+<link rel="dns-prefetch" href="https://formspree.io">
+<link rel="preload" as="image" href="/images/lobby.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JLDZXYHXQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8JLDZXYHXQ');
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">本文へスキップ</a>
+<header class="site-header" role="banner">
+  <a href="index.html#top" class="logo-wrap" aria-label="結城宏太税理士事務所 ホームへ">
+    <span class="logo-main">結城宏太税理士事務所</span>
+    <span class="logo-sub">YUKI KOTA TAX ACCOUNTANT OFFICE</span>
+  </a>
+  <nav class="global-nav" aria-label="グローバルナビゲーション">
+    <a href="index.html#about">事務所について</a>
+    <a href="services.html">業務・料金</a>
+    <a href="faq.html">よくある質問</a>
+    <a href="index.html#access">アクセス</a>
+    <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <a href="index.html#about" data-mclose>事務所について</a>
+  <a href="services.html" data-mclose>業務・料金</a>
+  <a href="faq.html" data-mclose>よくある質問</a>
+  <a href="index.html#access" data-mclose>アクセス</a>
+  <a href="index.html#contact" data-mclose class="mobile-cta">お問い合わせ（初回30分無料）</a>
+</nav>
+<main id="main">
+  <section class="hero" id="top" aria-label="結城宏太税理士事務所の概要">
+    <div class="hero-left">
+      <span class="hero-badge">大阪・兵庫対応 / 税務顧問・相続・創業支援</span>
+      <h1 class="hero-title">制度と数字をつないで、<br>経営判断を支える。</h1>
+      <p class="hero-sub">税務申告だけでなく、会計データの整備、資金繰り、社会保険料・補助金との関係、相続・事業承継まで、判断に必要な前提を整理して説明します。</p>
+      <div class="hero-actions"><a href="#contact" class="btn-primary">無料相談を申し込む</a><a href="services.html" class="btn-secondary">業務内容・料金を見る</a></div>
+    </div>
+    <div class="hero-right">
+      <div class="slideshow" id="heroSlide" aria-roledescription="carousel" aria-label="事務所周辺の写真">
+        <div class="slide active" role="group" aria-label="1 / 3"><img src="images/lobby.jpg" alt="ゲートタワーオフィスのロビー" width="1200" height="800" fetchpriority="high"></div>
+        <div class="slide" role="group" aria-label="2 / 3"><img src="images/tower.jpg" alt="グラングリーン大阪 南館 ゲートタワーの外観" width="1200" height="800" loading="lazy"></div>
+        <div class="slide" role="group" aria-label="3 / 3"><img src="images/exterior1.jpg" alt="グラングリーン大阪の外観" width="1200" height="800" loading="lazy"></div>
+        <button class="slide-btn slide-prev" type="button" aria-label="前の画像"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+        <button class="slide-btn slide-next" type="button" aria-label="次の画像"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <button class="slide-pause" type="button" aria-label="自動再生を一時停止" id="slidePause"><span aria-hidden="true">Ⅱ</span></button>
+        <div class="slide-dots" role="tablist" aria-label="スライド選択"><button class="slide-dot active" type="button" aria-label="1枚目を表示" aria-selected="true"></button><button class="slide-dot" type="button" aria-label="2枚目を表示" aria-selected="false"></button><button class="slide-dot" type="button" aria-label="3枚目を表示" aria-selected="false"></button></div>
+      </div>
+    </div>
+  </section>
 
-## 内容
+  <section id="needs" class="section-light">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">このようなご相談に対応します</h2></div></div>
+      <div class="needs-grid reveal">
+        <div class="need-item"><strong>顧問税理士を変更したい</strong><p>説明が少ない、対応が遅い、数字を経営判断に使えていない場合に、会計データと運用を見直します。</p></div>
+        <div class="need-item"><strong>創業・法人化後の税務を整えたい</strong><p>届出、役員報酬、消費税、インボイス、資金繰りなど、初期段階で決めるべき事項を整理します。</p></div>
+        <div class="need-item"><strong>相続税・事業承継を早めに確認したい</strong><p>財産構成、自社株、贈与、納税資金など、複数の選択肢を比較できる形にします。</p></div>
+        <div class="need-item"><strong>経理・会計の流れを整えたい</strong><p>請求、入金、経費精算、給与、会計入力の流れを可視化し、属人化を抑えます。</p></div>
+      </div>
+    </div>
+  </section>
 
-- `index.html`：トップページ
-- `services.html`：業務内容一覧
-- `fees.html`：料金一覧
-- 個別ページ：`tax-advisory.html`, `inheritance.html`, `startup.html`, `accounting-dx.html`, `tax-investigation.html`
-- `privacy.html`, `tokutei.html`, `404.html`
-- `assets/css/style.css`, `assets/js/main.js`
-- `robots.txt`, `sitemap.xml`, `site.webmanifest`
+  <section id="about" class="section-warm">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">事務所について</h2></div></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>経営上の意思決定は、ひとつの数字だけで完結しません。役員報酬を変えれば法人税だけでなく社会保険料も動き、設備投資のタイミングは資金繰りや補助金のスケジュールとも関係します。相続・事業承継では、相続税、贈与税、株価評価、納税資金が同時に問題になります。</p>
+          <p>当事務所は、税務・会計を中心に、周辺制度との関係も踏まえて現状を整理し、「何をすると、何がいくら動くか」を説明します。お客様自身が理解し、納得して判断できることを重視しています。</p>
+          <p>特に、バックオフィスの業務フロー整備を得意領域のひとつとしています。請求、入金、経費精算、給与、会計入力が属人化したままでは、数字の正確性も判断の速度も下がります。業務を可視化・標準化し、会計データを活かせる状態に整えることを大切にしています。</p>
+        </div>
+        <aside class="profile-box reveal" aria-label="代表プロフィール">
+          <div class="profile-head"><div><p class="profile-name">結城 宏太</p><p class="profile-role">税理士 / 登録番号 139208</p></div></div>
+          <div class="profile-row"><span class="profile-label">資格</span><span class="profile-value">税理士（2018年登録）</span></div>
+          <div class="profile-row"><span class="profile-label">所属</span><span class="profile-value">近畿税理士会 大淀支部</span></div>
+          <div class="profile-row"><span class="profile-label">略歴</span><span class="profile-value">2013年 税理士法人入社<br>大学院修士課程修了・税理士試験合格<br>2018年 税理士登録<br>2026年4月 独立開業</span></div>
+          <div class="profile-row"><span class="profile-label">所在地</span><span class="profile-value">大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-## 反映した主な方針
+  <section id="services" class="section-light">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">業務内容</h2></div></div>
+      <p class="lead-text reveal">中小企業・個人事業主の月次顧問を中心に、相続税申告、創業支援、会計環境の構築、業務フロー整備、税務調査対応まで対応します。各業務の内容と料金は、個別ページで詳しく整理しています。</p>
+      <div class="services-grid reveal"><article class="service-card">
+    <h3 class="service-name">法人・個人事業主の税務顧問</h3>
+    <p class="service-desc">月次会計、税務相談、決算申告、資金繰りの確認まで、日常の数字を経営判断に使える状態へ整えます。</p>
+    <div class="service-foot"><span class="service-price">法人 月額 25,000円〜　/　個人 月額 15,000円〜<br>会計システム・経理運用支援料 月額 10,000円〜</span><a class="text-link" href="tax-advisory.html">詳しく見る</a></div>
+  </article>
+<article class="service-card">
+    <h3 class="service-name">相続税申告・相続対策</h3>
+    <p class="service-desc">相続発生後の申告だけでなく、生前の財産整理、納税資金、贈与・保険・不動産の扱いまで、早い段階から整理します。</p>
+    <div class="service-foot"><span class="service-price">申告 遺産総額0.5〜1.0%　試算・対策 最低160,000円〜</span><a class="text-link" href="inheritance.html">詳しく見る</a></div>
+  </article>
+<article class="service-card">
+    <h3 class="service-name">創業支援・会社設立後の税務</h3>
+    <p class="service-desc">開業届、法人設立後の届出、役員報酬、消費税、インボイス、会計ソフト、初期の資金計画をまとめて整理します。</p>
+    <div class="service-foot"><span class="service-price">初回相談で状況を確認のうえ個別見積もり</span><a class="text-link" href="startup.html">詳しく見る</a></div>
+  </article>
+<article class="service-card highlight">
+    <h3 class="service-name">会計環境構築・業務フロー整備</h3>
+    <p class="service-desc">請求、入金、経費精算、給与、会計入力の流れを可視化し、属人化を抑えながら会計データの精度を高めます。</p>
+    <div class="service-foot"><span class="service-price">範囲を確認のうえ個別見積もり</span><a class="text-link" href="accounting-dx.html">詳しく見る</a></div>
+  </article>
+<article class="service-card">
+    <h3 class="service-name">税務調査・各種対応</h3>
+    <p class="service-desc">税務調査の事前準備、当日の立会い、調査後の対応、届出・申告書類の整理など、必要な範囲を明確にして支援します。</p>
+    <div class="service-foot"><span class="service-price">内容により個別見積もり</span><a class="text-link" href="tax-investigation.html">詳しく見る</a></div>
+  </article></div>
+      <div class="center-actions reveal"><a href="services.html" class="btn-secondary dark">業務内容一覧を見る</a><a href="services.html#scope" class="btn-secondary dark">料金一覧を見る</a></div>
+    </div>
+  </section>
 
-- 最新GA4 ID `G-8JLDZXYHXQ` を全ページに設置。
-- プロフィール写真エリアは設けず、当面はイニシャル入りのプロフィールカードに統一。
-- 業務内容・料金はトップページから独立させ、個別ページと料金一覧ページへ分岐。
-- Claude統合版のアクセシビリティ、スライド一時停止、スティッキーCTA、ページトップ、対応エリアタグ等は採用。
-- 過度な保証表現（完全、防衛、必ず削減等）は不使用。
-- 社会保険・登記・補助金については、税理士業務外の手続代行と読まれないよう、試算・整理・専門家連携の表現に調整。
+  <section id="area" class="section-warm">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">対応エリア</h2></div></div>
+      <div class="area-box reveal">
+        <div><h3>大阪府</h3><p>大阪市、堺市、豊中市、吹田市、高槻市、茨木市、枚方市、東大阪市、箕面市、池田市ほか。梅田の事務所での面談、オンライン面談に対応します。</p><div class="area-tags" aria-hidden="true"><span class="area-tag primary">大阪府全域</span><span class="area-tag">大阪市</span><span class="area-tag">堺市</span><span class="area-tag">豊中市</span><span class="area-tag">吹田市</span><span class="area-tag">高槻市</span><span class="area-tag">茨木市</span><span class="area-tag">枚方市</span><span class="area-tag">東大阪市</span></div></div>
+        <div><h3>兵庫県</h3><p>神戸市、西宮市、尼崎市、芦屋市、伊丹市、宝塚市、川西市、明石市、加古川市、姫路市ほか。事業者・相続のご相談に対応します。</p><div class="area-tags" aria-hidden="true"><span class="area-tag primary">兵庫県全域</span><span class="area-tag">神戸市</span><span class="area-tag">尼崎市</span><span class="area-tag">西宮市</span><span class="area-tag">芦屋市</span><span class="area-tag">伊丹市</span><span class="area-tag">宝塚市</span><span class="area-tag">川西市</span><span class="area-tag">明石市</span><span class="area-tag">姫路市</span></div></div>
+      </div>
+    </div>
+  </section>
 
-## 公開前に確認すること
+  <section id="flow">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">ご相談の流れ</h2></div></div>
+      <div class="flow-grid reveal">
+        <div class="flow-item"><span class="flow-step">STEP 01</span><p class="flow-title">お問い合わせ</p><p class="flow-desc">フォームまたはお電話でご連絡ください。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 02</span><p class="flow-title">初回相談</p><p class="flow-desc">現状、課題、期限、希望する支援範囲を確認します。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 03</span><p class="flow-title">資料確認</p><p class="flow-desc">必要に応じて決算書、試算表、申告書等を確認します。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 04</span><p class="flow-title">見積・提案</p><p class="flow-desc">業務範囲、料金、開始時期を明確にします。</p></div>
+        <div class="flow-item"><span class="flow-step">STEP 05</span><p class="flow-title">契約・開始</p><p class="flow-desc">契約後、データ共有と運用フローを整えます。</p></div>
+      </div>
+    </div>
+  </section>
 
-1. 既存画像 `images/lobby.jpg`, `images/tower.jpg`, `images/exterior1.jpg` を同じパスに配置してください。
-2. 料金表示について、税込・税別・実費別の事務所方針を最終確認してください。現状は「正式見積で明示」としています。
-3. Formspree のフォームID `maqlllje` が現在の受信先で問題ないか確認してください。
-4. Google Search Console に `sitemap.xml` を送信してください。
-5. Googleビジネスプロフィールの名称・住所・電話番号をサイトと一致させてください。
+  <section id="access" class="section-dark">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">アクセス</h2></div></div>
+      <div class="access-grid reveal">
+        <div>
+          <address class="access-address"><strong>結城宏太税理士事務所</strong>〒530-0011<br>大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階<br>TEL：<a href="tel:+81676886391" data-track="tel">06-7688-6391</a><br>受付時間：平日 9:00〜18:00</address>
+          <div class="access-routes"><div class="access-route"><span class="route-line">JR</span><span class="route-desc">「大阪駅」うめきた地下口より<br>徒歩約5分（地下通路にて直結）</span></div><div class="access-route"><span class="route-line">Osaka Metro</span><span class="route-desc">御堂筋線「梅田駅」北改札より<br>徒歩約10分</span></div><div class="access-route"><span class="route-line">阪急</span><span class="route-desc">「大阪梅田駅」2階中央改札口より<br>徒歩約12分</span></div><div class="access-route"><span class="route-line">阪神</span><span class="route-desc">「大阪梅田駅」西口より<br>徒歩約8分</span></div></div>
+          <p class="route-note">来所面談のほか、Zoom等を利用したオンライン相談にも対応しています。</p>
+        </div>
+        <div class="access-map"><iframe title="結城宏太税理士事務所の所在地" src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA5-54&output=embed" width="600" height="380" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
 
-## Wixで使う場合
-
-Wix上で完全に差し替えるのではなく、ページ本文・見出し・個別ページ構成をビルダー側で再現し、GA4・構造化データ・OGP・canonical等はWixのSEO設定／カスタムコードに分けて反映するのが現実的です。静的ホスティングに移行する場合は、このフォルダをそのまま公開用のベースにできます。
+  <section id="contact" class="section-warm">
+    <div class="section-inner">
+      <div class="section-header reveal"><div><h2 class="section-title">お問い合わせ</h2></div></div>
+      <div class="contact-grid reveal">
+        <div>
+          <p class="contact-lead">初回30分程度のご相談は無料で承ります。</p>
+          <div class="contact-direct-info">
+            <p class="contact-direct-tel"><a href="tel:+81676886391">06-7688-6391</a><span>平日 9:00〜18:00</span></p>
+            <p class="contact-direct-mail"><a href="mailto:contact@yuki-tax.jp">contact@yuki-tax.jp</a></p>
+          </div>
+          <p class="contact-sub-note">よくあるご質問は<a href="faq.html">FAQページ</a>をご覧ください。<br>通常3営業日以内にご返信します。</p>
+          
+        </div>
+        <div class="contact-form" aria-live="polite">
+          <form id="contactForm" action="https://formspree.io/f/maqlllje" method="POST" novalidate>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+            <div class="form-grid">
+              <div class="form-row"><label class="form-label" for="name">お名前<span>必須</span></label><input class="form-input" id="name" name="name" type="text" autocomplete="name" required aria-required="true"></div>
+              <div class="form-row"><label class="form-label" for="company">会社名・屋号</label><input class="form-input" id="company" name="company" type="text" autocomplete="organization"></div>
+              <div class="form-row"><label class="form-label" for="email">メールアドレス<span>必須</span></label><input class="form-input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true"></div>
+              <div class="form-row"><label class="form-label" for="tel">電話番号</label><input class="form-input" id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
+              <div class="form-row"><label class="form-label" for="areaInput">所在地</label><input class="form-input" id="areaInput" name="area" type="text" placeholder="例：大阪市北区、兵庫県西宮市"></div>
+              <div class="form-row"><label class="form-label" for="service">ご相談内容</label><select class="form-select" id="service" name="service"><option value="">選択してください</option><option>税務顧問</option><option>創業・法人化</option><option>相続税申告・相続対策</option><option>会計環境・業務フロー整備</option><option>税務調査対応</option><option>その他</option></select></div>
+              <div class="form-row full"><label class="form-label" for="timing">ご希望の面談時期</label><select class="form-select" id="timing" name="timing"><option value="">特に指定なし</option><option>できるだけ早く（1〜2週間以内）</option><option>今月中</option><option>来月以降</option><option>決算・申告期限が近い</option></select></div>
+              <div class="form-row full"><label class="form-label" for="message">お問い合わせ内容<span>必須</span></label><textarea class="form-textarea" id="message" name="message" required aria-required="true" placeholder="ご相談の概要、期限、現在困っていることをご記入ください。"></textarea></div>
+            </div>
+            <div class="consent-row"><input type="checkbox" id="consent" required aria-required="true"><label class="consent-label" for="consent"><a href="privacy.html">個人情報保護方針</a>に同意のうえ送信します。</label></div>
+            <button type="submit" class="form-submit">送信する</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="sticky-cta" aria-label="固定お問い合わせ導線">
+  <a href="tel:+81676886391" class="sticky-tel" data-track="tel">電話</a>
+  <a href="index.html#contact" class="sticky-form">無料相談</a>
+</div>
+<button class="to-top" id="toTop" type="button" aria-label="ページトップへ戻る"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 15 12 9 18 15"></polyline></svg></button>
+<footer class="site-footer">
+  <div>
+    <p class="footer-name">結城宏太税理士事務所</p>
+    <address class="footer-address">〒530-0011<br>大阪府大阪市北区大深町5-54 グラングリーン大阪 南館 ゲートタワー7階<br>TEL <a href="tel:+81676886391" data-track="tel">06-7688-6391</a>　受付時間：平日 9:00〜18:00</address>
+  </div>
+  <div class="footer-right">
+    <nav class="footer-links" aria-label="フッターナビゲーション">
+      <a href="services.html">業務・料金</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="privacy.html">個人情報保護方針</a>
+      <a href="tokutei.html">特定商取引法に基づく表記</a>
+    </nav>
+    <p class="footer-copy">© 2026 結城宏太税理士事務所</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
