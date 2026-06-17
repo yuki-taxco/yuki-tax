@@ -1,0 +1,14 @@
+# Canonical URL redirects
+/index.html  /  301
+/services.html  /services  301
+/fees.html  /services  301
+/fees  /services  301
+/faq.html  /faq  301
+/tax-advisory.html  /tax-advisory  301
+/inheritance.html  /inheritance  301
+/startup.html  /startup  301
+/accounting-dx.html  /accounting-dx  301
+/tax-investigation.html  /tax-investigation  301
+/privacy.html  /privacy  301
+/tokutei.html  /tokutei  301
+/sitemap.html  /sitemap  301
